@@ -81,7 +81,7 @@ export default function Home() {
               Life is hard enough. I find the thing quietly making it harder, sit
               with it long enough to understand it, and build something that makes
               people&rsquo;s lives <span className="text-accent">easier</span>,
-              and earns something for the business.
+              and earns big for the business.
             </p>
           </Reveal>
         </div>
