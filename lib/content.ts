@@ -13,7 +13,7 @@ export const profile = {
   thesis:
     "Product Manager across payments, fintech, and D2C commerce.",
   subthesis:
-    "Founding PM for D2C checkout at Cashfree, scaled to $100M in annual TPV, 1,000+ merchants, and a 40% lift in conversion. Now I want to build in AI.",
+    "Founding PM for D2C checkout at Cashfree, scaled to $100M in annual TPV, 1,000+ merchants, and a 40% lift in conversion. Right now I am playing with AI, and I want to make it big.",
   links: {
     email: "yousefsajmal1@gmail.com",
     phone: "+91-8714268343",
@@ -366,7 +366,7 @@ export const about = {
   ],
   throughline: [
     "The thread through all of it is the same: take a problem where real money and real trust are on the line, sit in the ambiguity long enough to actually understand it, and ship something people rely on. I care about growth and monetisation as outcomes, not vanity metrics.",
-    "I want to build in AI next because it is the same shape of problem at a bigger scale. I have built with AI since JP Morgan, shipped an AI insights mailer to 1,000+ merchants, and I am now building CROScore, an AI CRO audit tool, on the side. I want to do that as the main thing.",
+    "Right now I am playing with AI, and I want to make it big with it. I have built with AI since JP Morgan, where I shipped an engine for 4,000+ banking clients, then an AI insights mailer for 1,000+ merchants, and I am now building CROScore and CareerScore on the side. Same shape of problem, bigger canvas.",
   ],
   values: [
     { title: "Ship the proof, not just the product", text: "A number a merchant can see beats a promise a merchant has to believe." },

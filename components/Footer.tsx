@@ -13,8 +13,8 @@ export function Footer() {
               Want the full story?
             </h2>
             <p className="mt-3 max-w-md text-text-muted">
-              I&rsquo;m looking for the next hard problem, ideally at a company
-              building the future of AI. Let&rsquo;s talk.
+              I&rsquo;m always up for the next hard problem. Lately I am playing
+              with AI and want to make it big. Let&rsquo;s talk.
             </p>
           </div>
           <a

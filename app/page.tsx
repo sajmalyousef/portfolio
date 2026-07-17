@@ -91,14 +91,14 @@ export default function Home() {
         <Reveal>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="label mb-3">Now building</p>
+              <p className="label mb-3">On the side</p>
               <h2 className="font-display text-4xl font-bold text-text sm:text-5xl">
-                Learning to build with AI.
+                Playing with AI.
               </h2>
             </div>
             <p className="max-w-sm text-text-muted">
-              Products I am shipping myself, applying the growth and CRO
-              instincts from checkout to AI-native tools.
+              Side projects where I take the growth and CRO instincts from
+              checkout into AI-native tools, and try to make them big.
             </p>
           </div>
         </Reveal>
