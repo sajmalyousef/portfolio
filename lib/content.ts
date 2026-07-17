@@ -8,8 +8,8 @@ export const profile = {
   role: "Product Manager, Cashfree Payments",
   location: "Bengaluru, India",
   headlineTop: "I build and scale",
-  headlineAccent: "payments products",
-  headlineBottom: "from 0 to 1.",
+  headlineAccent: "payments for SMBs",
+  headlineBottom: "from 0 to 1, and 1 to 10.",
   thesis:
     "Product Manager across payments, fintech, and D2C commerce.",
   subthesis:
@@ -17,7 +17,7 @@ export const profile = {
   links: {
     email: "yousefsajmal1@gmail.com",
     phone: "+91-8714268343",
-    linkedin: "https://linkedin.com/in/sajmal-yousef",
+    linkedin: "https://www.linkedin.com/in/sajmal-yousef/",
     github: "https://github.com/SimplQ",
     resume: "/resume.pdf",
   },
