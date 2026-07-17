@@ -19,7 +19,7 @@ export const profile = {
     phone: "+91-8714268343",
     linkedin: "https://www.linkedin.com/in/sajmal-yousef/",
     github: "https://github.com/SimplQ",
-    resume: "/resume.pdf",
+    resume: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume.pdf`,
   },
   companies: [
     "Cashfree Payments",
