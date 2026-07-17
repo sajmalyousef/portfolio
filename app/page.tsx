@@ -78,9 +78,10 @@ export default function Home() {
           <Reveal>
             <p className="label mb-6">How I work</p>
             <p className="font-display text-3xl font-medium leading-snug text-text sm:text-4xl">
-              Take a problem where money and trust are on the line, sit in the
-              ambiguity long enough to understand it, and ship something people{" "}
-              <span className="text-accent">rely on</span>.
+              Life is hard enough. I find the thing quietly making it harder, sit
+              with it long enough to understand it, and build something that makes
+              people&rsquo;s lives <span className="text-accent">easier</span>,
+              and earns its keep doing it.
             </p>
           </Reveal>
         </div>

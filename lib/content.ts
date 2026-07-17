@@ -365,7 +365,7 @@ export const about = {
     "As the founding PM for D2C checkout at Cashfree, I built the vertical from zero to $100M in annual TPV and 1,000+ merchants. Before that I owned the EMI, BNPL, and core payments charter, scaling checkout financing 3X. I started as a software engineer at JP Morgan, where I built an AI engine serving 4,000+ banking clients and cut email servicing time by 95%.",
   ],
   throughline: [
-    "The thread through all of it is the same: take a problem where real money and real trust are on the line, sit in the ambiguity long enough to actually understand it, and ship something people rely on. I care about growth and monetisation as outcomes, not vanity metrics.",
+    "The thread through all of it is the same: life is hard enough, so I find the thing quietly making it harder, sit with it long enough to truly understand it, and build something that makes people's lives easier and earns its keep. I care about growth and monetisation as outcomes, not vanity metrics.",
     "Right now I am playing with AI, and I want to make it big with it. I have built with AI since JP Morgan, where I shipped an engine for 4,000+ banking clients, then an AI insights mailer for 1,000+ merchants, and I am now building CROScore and CareerScore on the side. Same shape of problem, bigger canvas.",
   ],
   values: [
