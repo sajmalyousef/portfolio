@@ -136,15 +136,15 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "rto",
     order: 2,
-    title: "Cutting RTO from 25% to under 4%",
+    title: "Cutting RTO from 25% to 4%",
     kicker: "Return to Origin",
     oneLiner:
-      "COD returns were eating merchant margins. I defined the COD strategy and built RTO Intelligence plus Partial COD, taking return rates from 25% to 3 to 4% and unlocking $2.5M in annual revenue.",
+      "COD returns were eating merchant margins. I defined the COD strategy and built RTO Intelligence plus Partial COD, taking return rates from 25% to 4% and unlocking $2.5M in annual revenue.",
     role: "Product Manager, D2C Checkout",
     timeframe: "Cashfree Payments, 2025 to present",
     tags: ["Risk", "COD", "Logistics", "Revenue"],
     heroMetrics: [
-      { value: "25→<4%", label: "RTO rate on managed orders" },
+      { value: "25→4%", label: "RTO rate on managed orders" },
       { value: "$2.5M", label: "annual revenue unlocked", sub: "Partial COD" },
       { value: "30%", label: "RTO reduction overall" },
     ],
@@ -182,7 +182,7 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     impact: [
-      { value: "25→<4%", label: "RTO rate on managed orders" },
+      { value: "25→4%", label: "RTO rate on managed orders" },
       { value: "30%", label: "overall RTO reduction" },
       { value: "$2.5M", label: "annual revenue from Partial COD" },
       { value: "2.5B+", label: "logistics data points modelled" },

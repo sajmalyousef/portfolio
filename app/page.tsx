@@ -53,12 +53,12 @@ export default function Home() {
             <div>
               <p className="label mb-3">Selected work</p>
               <h2 className="font-display text-4xl font-bold text-text sm:text-5xl">
-                Five products, real numbers.
+                The work.
               </h2>
             </div>
             <p className="max-w-sm text-text-muted">
-              Checkout, credit, and risk at Cashfree, plus an open-source project
-              I built from scratch. Growth and monetisation, measured.
+              A summary of what I have shipped across payments, checkout, and
+              credit at Cashfree, plus an open-source project of my own.
             </p>
           </div>
         </Reveal>
