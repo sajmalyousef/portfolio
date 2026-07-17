@@ -17,10 +17,10 @@ const sans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: `${profile.name} — ${profile.role}`,
+  title: `${profile.name} · ${profile.role}`,
   description: profile.thesis,
   openGraph: {
-    title: `${profile.name} — Product Manager`,
+    title: `${profile.name} · Product Manager`,
     description: profile.thesis,
     type: "website",
   },

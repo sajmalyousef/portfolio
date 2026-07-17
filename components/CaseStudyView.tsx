@@ -82,9 +82,9 @@ export function CaseStudyView({
                       className="rounded-xl border border-border bg-bg-card p-5"
                     >
                       <span className="font-semibold text-text">
-                        {item.title}
+                        {item.title}.
                       </span>
-                      <span className="text-text-muted"> — {item.text}</span>
+                      <span className="text-text-muted"> {item.text}</span>
                     </li>
                   ))}
                 </ul>

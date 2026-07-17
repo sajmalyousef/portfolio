@@ -5,7 +5,7 @@ import { useInView, useReducedMotion } from "motion/react";
 
 /**
  * Animates the numeric portion of a value string on scroll-in.
- * Non-numeric values (e.g. "₹‹X›Cr") render as-is — placeholders stay literal.
+ * Non-numeric values (e.g. "$100M", "25→<4%") render as-is.
  */
 export function StatCounter({ value }: { value: string }) {
   const ref = useRef<HTMLSpanElement>(null);

@@ -16,7 +16,7 @@ export async function generateMetadata({
   const study = caseStudies.find((s) => s.slug === slug);
   if (!study) return {};
   return {
-    title: `${study.kicker} — Sajmal Yousef`,
+    title: `${study.kicker} · Sajmal Yousef`,
     description: study.oneLiner,
   };
 }

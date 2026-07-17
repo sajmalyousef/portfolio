@@ -28,16 +28,18 @@ export function Hero() {
         className="relative mx-auto w-full max-w-6xl"
       >
         <motion.p variants={item} className="label mb-8">
-          {profile.name} — {profile.role}
+          {profile.name} · {profile.role}
         </motion.p>
 
         <motion.h1
           variants={item}
           className="font-display text-5xl font-bold text-text sm:text-7xl lg:text-[5.5rem]"
         >
-          I ship products that
+          {profile.headlineTop}
           <br />
-          move <span className="text-accent">real money</span>.
+          <span className="text-accent">{profile.headlineAccent}</span>
+          <br />
+          {profile.headlineBottom}
         </motion.h1>
 
         <motion.p

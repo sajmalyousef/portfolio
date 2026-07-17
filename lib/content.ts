@@ -1,27 +1,36 @@
 // ─────────────────────────────────────────────────────────────
-// All portfolio content lives here. Metrics wrapped in ‹ › are
-// PLACEHOLDERS — Sajmal to replace with real, cleared numbers.
+// All portfolio content. Numbers are sourced from Sajmal's résumé,
+// his interview-prep notes, and Cashfree's public Checkout360 page.
 // ─────────────────────────────────────────────────────────────
 
 export const profile = {
   name: "Sajmal Yousef",
   role: "Product Manager, Cashfree Payments",
   location: "Bengaluru, India",
+  headlineTop: "I build and scale",
+  headlineAccent: "payments products",
+  headlineBottom: "from 0 to 1.",
   thesis:
-    "I take ambiguous, high-stakes problems — the ones where real money is on the line — and turn them into products people trust.",
+    "Product Manager with 4+ years across payments, fintech, and D2C commerce.",
   subthesis:
-    "For five years that's meant checkout, credit, and payments. Next, I want to do it for AI.",
-  // ‹PLACEHOLDER› — swap in real links
+    "Founding PM for D2C checkout at Cashfree, scaled to $100M in annual TPV, 1,000+ merchants, and a 40% lift in conversion. Now I want to build in AI.",
   links: {
-    email: "hello@example.com", // ‹PLACEHOLDER›
-    linkedin: "https://linkedin.com/in/your-handle", // ‹PLACEHOLDER›
-    github: "https://github.com/your-handle", // ‹PLACEHOLDER›
-    resume: "/resume.pdf", // ‹PLACEHOLDER› drop a PDF in /public
+    email: "yousefsajmal1@gmail.com",
+    phone: "+91-8714268343",
+    linkedin: "https://linkedin.com/in/sajmal-yousef",
+    github: "https://github.com/SimplQ",
+    resume: "/resume.pdf",
   },
+  companies: [
+    "Cashfree Payments",
+    "JP Morgan Chase",
+    "IIM Bangalore",
+    "NIT Calicut",
+  ],
   heroStats: [
-    { value: "₹‹X›Cr+", label: "GMV influenced across checkout & credit" },
-    { value: "‹X›%", label: "peak checkout conversion lift" },
-    { value: "‹X›k+", label: "merchants onboarded" },
+    { value: "$100M", label: "annual TPV scaled from zero" },
+    { value: "+40%", label: "checkout conversion lift" },
+    { value: "1,000+", label: "D2C merchants onboarded" },
   ],
 };
 
@@ -51,339 +60,314 @@ export type CaseStudy = {
 };
 
 export const caseStudies: CaseStudy[] = [
-  // ── 1. RTO ────────────────────────────────────────────────
+  // ── 1. One-Click Checkout + Offer Engine ─────────────────
   {
-    slug: "rto",
+    slug: "one-click-checkout",
     order: 1,
-    title: "Killing the return before it ships",
-    kicker: "Return to Origin",
+    title: "Scaling D2C checkout from 0 to $100M TPV",
+    kicker: "One-Click Checkout + Offer Engine",
     oneLiner:
-      "COD orders that never get delivered quietly bleed D2C brands. I built the risk layer that stops the bad ones at checkout.",
-    role: "Product lead — RTO & risk",
-    timeframe: "‹2023–2024›",
-    tags: ["Risk modelling", "COD", "Checkout", "D2C"],
+      "As founding PM, I built and scaled Cashfree's D2C checkout to 1,000+ merchants and $100M in annual TPV, lifting conversion 40% with a 300+ construct offer engine on top.",
+    role: "Founding PM, D2C Checkout",
+    timeframe: "Cashfree Payments, 2025 to present",
+    tags: ["0 to 1", "Conversion", "Offer engine", "Shopify"],
     heroMetrics: [
-      { value: "‹X›%", label: "reduction in RTO rate", sub: "on protected orders" },
-      { value: "₹‹X›Cr", label: "shipping loss avoided", sub: "annualised" },
-      { value: "‹X›%", label: "orders auto-cleared", sub: "no friction added" },
+      { value: "$100M", label: "annual TPV", sub: "built from zero" },
+      { value: "+40%", label: "checkout conversion lift", sub: "via A/B experiments" },
+      { value: "1,000+", label: "merchants onboarded" },
     ],
     sections: [
       {
         label: "The problem",
-        heading: "A return that costs you twice",
+        heading: "Every field in checkout is a place to lose the sale",
         body: [
-          "In Indian e-commerce, Cash on Delivery still rules. And COD hides an ugly tax: Return to Origin. The customer places an order, the courier drives it out, nobody answers the door — or the buyer changes their mind — and the parcel travels all the way back. The brand eats forward shipping, reverse shipping, packaging, and a dead SKU that's now been on a two-week road trip.",
-          "For a mid-size D2C brand, RTO can quietly swallow a fifth of every COD rupee. It's the kind of problem everyone knows about and nobody owns, because it lives in the seam between payments, logistics, and the customer's intent — none of which talk to each other.",
+          "A D2C brand spends its entire marketing budget getting a shopper to add to cart. Then the native checkout asks for a name, an address, a pincode, a phone number, an OTP, and a payment method, and a large share of shoppers simply leave. In Indian e-commerce, that drop-off is where growth quietly dies.",
+          "I joined as the founding PM for the D2C checkout vertical with a blank slate and a hard target: build a checkout good enough that brands would switch their entire funnel to it, then scale it into a real revenue line.",
+        ],
+        pull: "Shoppers do not abandon carts. They abandon forms.",
+      },
+      {
+        label: "The build",
+        heading: "One tap, powered by a shopper network",
+        body: [
+          "The core unlock is a shopper network. A returning buyer is recognised by phone number through WhatsApp OTP login, their saved address is prefilled from a base of 120M+ verified profiles, and they check out on a store they have never visited as if they already had an account there. Cart to paid drops to under 30 seconds.",
+          "I ran a continuous A/B experimentation loop on every step of the funnel. Removing friction one measured cut at a time is what turned a good checkout into a 40% conversion lift.",
+        ],
+      },
+      {
+        label: "Monetisation",
+        heading: "An offer engine with 300+ constructs",
+        body: [
+          "Conversion is only half the story. The other half is the offer, and a discount shown at the wrong moment just trains shoppers to wait for one. So I built an offer engine that evaluates every cart in real time and fires the right incentive at the right moment.",
+          "It ships with 300+ offer constructs (buy-one-get-one, free gifts, bank offers, no-cost EMI, and more) that merchants compose themselves, with margin caps, BIN targeting, and per-customer limits so growth never runs ahead of unit economics.",
+        ],
+        list: [
+          { title: "Redemption 3% to 65%", text: "offer adoption grew more than twentyfold once offers became contextual instead of blanket codes." },
+          { title: "+25% conversion", text: "the offer engine alone lifted checkout conversion a further 25%." },
+          { title: "5X redemption", text: "overall offer redemption scaled five times across the merchant base." },
+        ],
+        pull: "A blanket coupon is a blunt instrument. A 300 construct offer engine is a scalpel.",
+      },
+      {
+        label: "Onboarding",
+        heading: "Getting Shopify brands live without a solutions engineer",
+        body: [
+          "None of this matters if a merchant cannot switch it on. Most of the market runs on Shopify, so onboarding had to be near zero touch: install, connect, sync discounts, go live. I owned the activation funnel end to end and lifted sign-up to activation from 41% to 55%.",
+          "I then extended the addressable market beyond Shopify with custom checkout integrations for 400+ brands, and drove product-led growth through developer-first self-serve APIs, plugins, and a merchant dashboard that reached 300+ daily active users.",
+        ],
+        list: [
+          { title: "41% to 55% activation", text: "cut the steps between sign-up and first live order, measured every drop-off." },
+          { title: "400+ brands beyond Shopify", text: "custom integrations expanded the addressable market past the app store." },
+          { title: "300+ DAU", text: "self-serve APIs, plugins, and dashboard drove PLG adoption." },
+        ],
+      },
+    ],
+    impact: [
+      { value: "$100M", label: "annual TPV, from zero" },
+      { value: "+40%", label: "checkout conversion" },
+      { value: "5X", label: "offer redemption" },
+      { value: "41→55%", label: "sign-up to activation" },
+    ],
+    learned:
+      "Conversion is not one big win. It is the sum of a dozen removed frictions and one well-timed offer. And a checkout that is magical for the shopper is worthless until it is trivial for the merchant to switch on, so onboarding is a conversion problem too.",
+  },
+
+  // ── 2. RTO ────────────────────────────────────────────────
+  {
+    slug: "rto",
+    order: 2,
+    title: "Cutting RTO from 25% to under 4%",
+    kicker: "Return to Origin",
+    oneLiner:
+      "COD returns were eating merchant margins. I defined the COD strategy and built RTO Intelligence plus Partial COD, taking return rates from 25% to 3 to 4% and unlocking $2.5M in annual revenue.",
+    role: "Product Manager, D2C Checkout",
+    timeframe: "Cashfree Payments, 2025 to present",
+    tags: ["Risk", "COD", "Logistics", "Revenue"],
+    heroMetrics: [
+      { value: "25→<4%", label: "RTO rate on managed orders" },
+      { value: "$2.5M", label: "annual revenue unlocked", sub: "Partial COD" },
+      { value: "30%", label: "RTO reduction overall" },
+    ],
+    sections: [
+      {
+        label: "The problem",
+        heading: "A return that costs the brand twice",
+        body: [
+          "Cash on Delivery still dominates Indian e-commerce, and it hides an ugly tax: Return to Origin. The customer places a COD order, the courier drives it out, nobody answers the door, and the parcel travels all the way back. The brand eats forward shipping, reverse shipping, packaging, and a dead SKU. RTO can quietly swallow a fifth of every COD rupee.",
+          "I owned the COD charter end to end, including logistics partnerships, and set out to separate the order that will come back from the one that will not, at the instant of checkout.",
         ],
         pull: "RTO is a tax nobody agreed to pay and everybody keeps paying.",
       },
       {
-        label: "The constraint",
-        heading: "You can't just ban COD",
+        label: "The tension",
+        heading: "The obvious fix made conversion worse",
         body: [
-          "The obvious fix — turn off COD for risky orders — is also the worst one. COD is the trust mechanism that lets a first-time buyer in a tier-3 town click 'buy'. Kill it and you kill conversion, especially exactly where growth comes from.",
-          "So the real problem wasn't 'stop returns.' It was 'separate the order that will come back from the one that won't — at the instant of checkout, in a few hundred milliseconds, without making the good customer feel accused.'",
+          "The first lever was Partial COD, asking for a small upfront prepayment on COD orders to filter out low-intent buyers. It reduced RTO sharply, but it also hurt conversion, because friction hits good customers and bad ones alike.",
+          "So I reframed the problem. This was not a case of turning COD off. It was a risk-segmentation problem: apply friction only where the risk actually sits, and let everyone else through untouched.",
         ],
       },
       {
-        label: "What I did",
-        heading: "A risk score that acts, not just warns",
+        label: "The build",
+        heading: "RTO Intelligence, tuned to each merchant",
         body: [
-          "I scoped an RTO risk engine that scores every COD order the moment it's placed — pulling signals from address quality, buyer history across the network, pincode-level delivery performance, cart composition, and velocity patterns.",
-          "The score alone is useless; it has to do something. So the product wasn't a dashboard, it was a set of graded interventions the merchant could tune:",
+          "I built RTO Intelligence, a risk layer that scores every COD order the moment it is placed, drawing on address quality, buyer history, pincode-level delivery performance, and a base of 2.5B+ logistics data points. The score then drives graded COD controls the merchant configures themselves: allow, block, convert to prepaid, or ask for Partial COD.",
+          "Because each brand sets its own risk appetite, a fat-margin label and a thin-margin one run the same engine at different thresholds. That is what let it scale across the merchant base without a rebuild, and what lifted prepaid share along the way.",
         ],
         list: [
-          { title: "Green orders", text: "sail through untouched — the vast majority. Zero added friction is the whole point." },
-          { title: "Amber orders", text: "get a nudge: a prepaid incentive, a lightweight OTP address confirmation, or a small COD fee that reframes intent." },
-          { title: "Red orders", text: "convert to prepaid-only, or route to a confirmation step — the brand's own rule, not ours." },
+          { title: "RTO Intelligence", text: "real-time risk scoring on every COD order, trained on 2.5B+ logistics data points." },
+          { title: "Partial COD", text: "upfront prepayment that filtered low-intent orders and unlocked $2.5M in annual revenue." },
+          { title: "COD controls", text: "allow, block, prepaid, or partial, set per merchant against their own margins." },
         ],
         pull: "The score is the easy part. Deciding what to do at each threshold is the product.",
       },
-      {
-        label: "How it worked",
-        heading: "Tuned to the merchant's own economics",
-        body: [
-          "The lever that made it land was letting each merchant set their own risk appetite. A brand with fat margins wants to protect conversion and accept some RTO; a thin-margin brand wants to clamp down. Same engine, different thresholds — so the product fit a fashion label and a supplements brand without a rebuild.",
-          "We shipped it as a default-on layer inside checkout with a live view of what was being caught and what it was saving, so the merchant could see the trade in rupees and trust the machine.",
-        ],
-      },
     ],
     impact: [
-      { value: "‹X›%", label: "RTO reduction on protected orders" },
-      { value: "₹‹X›Cr", label: "annualised loss avoided" },
-      { value: "‹X›%", label: "of orders needed zero intervention" },
-      { value: "‹X›", label: "merchants live on the risk layer" },
+      { value: "25→<4%", label: "RTO rate on managed orders" },
+      { value: "30%", label: "overall RTO reduction" },
+      { value: "$2.5M", label: "annual revenue from Partial COD" },
+      { value: "2.5B+", label: "logistics data points modelled" },
     ],
     learned:
-      "The hardest part of a risk product isn't the model — it's earning the right to act on it. Merchants won't hand you the checkout unless they can see, in their own numbers, that you're saving more than you're scaring away. Ship the proof alongside the product, not after it.",
-  },
-
-  // ── 2. One-Click Checkout + Offer Engine ─────────────────
-  {
-    slug: "one-click-checkout",
-    order: 2,
-    title: "Turning intent into a single tap",
-    kicker: "One-Click Checkout + Offer Engine",
-    oneLiner:
-      "Every extra field in checkout is a place to lose the sale. I built the one-tap flow and the offer engine that decides, in real time, what to show to close it.",
-    role: "Product lead — OCC & offers",
-    timeframe: "‹2023–2025›",
-    tags: ["Conversion", "Checkout", "Offer engine", "Shopify"],
-    heroMetrics: [
-      { value: "‹X›%", label: "conversion lift vs. native checkout" },
-      { value: "‹X›s", label: "median time to pay" },
-      { value: "‹X›k+", label: "merchants onboarded" },
-    ],
-    sections: [
-      {
-        label: "The problem",
-        heading: "The checkout is where growth goes to die",
-        body: [
-          "A brand spends everything getting a shopper to 'add to cart.' Then the native checkout asks them to type a name, an address, a pincode, a phone number, hunt for an OTP, pick a payment method — and a huge share simply leave. Every field is a cliff edge.",
-          "The fix everyone wanted was 'Amazon-style one-click.' The catch: Amazon owns the account, the saved address, and the card. A payments company has to recreate that magic across thousands of independent merchants who share nothing.",
-        ],
-        pull: "The shopper doesn't abandon carts. They abandon forms.",
-      },
-      {
-        label: "The constraint",
-        heading: "One identity across a thousand stores",
-        body: [
-          "The unlock is a shopper network: recognise a returning buyer by phone number, pull their saved addresses and payment preferences, and let them check out on a store they've never visited before as if they had an account there.",
-          "That only works if the network is big enough to recognise most shoppers, which is a cold-start problem — the flow is magical at scale and mediocre on day one. Getting from one to the other was the real product work.",
-        ],
-      },
-      {
-        label: "What I did",
-        heading: "Collapse the flow, then sweeten it",
-        body: [
-          "First, collapse checkout to its irreducible core: enter phone, verify, confirm a prefilled address, pay. Everything that could be remembered, we remembered. Everything that could be inferred, we inferred.",
-          "Then the second half of conversion: the offer. A discount shown at the wrong moment trains people to always wait for one; the right offer at the right moment tips a hesitating shopper over the line. So I built an offer engine that evaluates every cart in real time against merchant-configured rules.",
-        ],
-        list: [
-          { title: "Contextual triggers", text: "first-time buyer, cart value threshold, payment method, prepaid vs COD, time-of-day — offers fire on conditions, not blanket codes." },
-          { title: "Prepaid nudges", text: "a small incentive to pay online instead of COD — which also feeds straight into the RTO problem." },
-          { title: "Merchant self-serve", text: "brands compose their own offers in the dashboard and see redemption and margin impact live." },
-        ],
-        pull: "A discount is a blunt instrument. An offer engine makes it a scalpel.",
-      },
-      {
-        label: "Onboarding",
-        heading: "Getting Shopify brands live in minutes, not weeks",
-        body: [
-          "None of this matters if a merchant can't turn it on. The bulk of the market runs on Shopify, so onboarding had to be near-zero-touch: install, connect, map the theme, go live — without a solutions engineer holding your hand.",
-          "I owned the activation funnel end to end: cutting steps between 'signed up' and 'first live order,' instrumenting where brands dropped off, and turning the messy long tail of theme quirks and edge-case configs into a self-serve flow. The metric I cared about wasn't signups — it was time-to-first-live-order and the share of merchants who got there alone.",
-        ],
-        list: [
-          { title: "App-store install", text: "one-click install from the Shopify app store, no contract-first gate." },
-          { title: "Guided go-live", text: "a checklist that takes a brand from connected to live checkout with clear, reversible steps." },
-          { title: "Funnel instrumentation", text: "every drop-off point measured, so onboarding improved on evidence, not anecdote." },
-        ],
-      },
-    ],
-    impact: [
-      { value: "‹X›%", label: "conversion lift vs. native checkout" },
-      { value: "‹X›k+", label: "merchants onboarded" },
-      { value: "‹X›%", label: "of merchants self-serve to go-live" },
-      { value: "‹X›%", label: "of returning shoppers recognised" },
-    ],
-    learned:
-      "Conversion isn't one big win — it's the sum of a dozen removed frictions and one well-timed offer. And the product that removes friction for the shopper is worthless until you've removed the friction for the merchant to switch it on. Onboarding is a conversion problem too.",
+      "The hardest part of a risk product is earning the right to act on it. A blanket rule is easy and wrong. The real work was reframing RTO as risk segmentation, then giving each merchant controls tuned to their own economics so they trusted the machine with their checkout.",
   },
 
   // ── 3. EMI & BNPL ─────────────────────────────────────────
   {
     slug: "emi-bnpl",
     order: 3,
-    title: "Making the price feel affordable",
+    title: "Scaling checkout financing 1 to 10",
     kicker: "Consumer EMI & BNPL",
     oneLiner:
-      "A ₹12,000 cart scares a shopper. '₹999/month' doesn't. I built the affordability layer that reframes the price at the moment of decision.",
-    role: "Product lead — EMI & BNPL",
-    timeframe: "‹2022–2024›",
-    tags: ["Credit", "BNPL", "EMI", "Checkout"],
+      "I owned the EMI and BNPL charter across 15+ banks and lenders, scaling card EMI GMV 3X, lifting payment success 45%, and embedding credit at checkout with a whitelabel Pay-in-3.",
+    role: "Product Manager, Core Payments",
+    timeframe: "Cashfree Payments, 2022 to 2025",
+    tags: ["Credit", "BNPL", "EMI", "Growth"],
     heroMetrics: [
-      { value: "‹X›%", label: "AOV uplift on EMI-eligible carts" },
-      { value: "‹X›", label: "lenders & card networks integrated" },
-      { value: "‹X›%", label: "of high-ticket orders on EMI/BNPL" },
+      { value: "3X", label: "card EMI GMV growth" },
+      { value: "+45%", label: "payment success rate" },
+      { value: "15+", label: "banks and lending partners" },
     ],
     sections: [
       {
         label: "The problem",
         heading: "Sticker shock kills high-ticket carts",
         body: [
-          "For anything above a few thousand rupees, the price itself becomes the objection. The shopper wants the product, has the intent, and still hesitates at the total. Affordability — not desire — is the wall.",
-          "EMI and BNPL are the answer, but in India they're a tangle: card-based EMI across a dozen banks each with their own tenures and rules, cardless EMI, and BNPL lenders with their own eligibility and underwriting. To the shopper it should feel like one clean choice. Behind the glass it's anything but.",
+          "For anything above a few thousand rupees, the price itself becomes the objection. The shopper has the intent and still hesitates at the total, because affordability, not desire, is the wall. EMI and BNPL are the answer, but in India they are a tangle of card EMI across a dozen banks, cardless EMI, and BNPL lenders, each with their own eligibility and rules.",
+          "I owned the EMI and BNPL charter across 15+ banks and partners, responsible for the full lifecycle: onboarding, payments, refunds, settlements, and reconciliation.",
         ],
-        pull: "People don't buy prices. They buy monthly payments they can picture.",
+        pull: "People do not buy prices. They buy monthly payments they can picture.",
       },
       {
-        label: "The constraint",
-        heading: "Complexity that has to disappear",
+        label: "The build",
+        heading: "Automate onboarding, route intelligently, embed credit",
         body: [
-          "Every lender has different eligibility, tenure options, interest treatment, and no-cost-EMI subvention math. Surface all of it and you paralyse the shopper. Hide too much and you break trust when the real number appears.",
-          "The design problem was ruthless editing: show the smallest true set of options that lets someone decide, compute the real monthly number honestly, and make eligibility feel instant even when three systems have to agree behind the scenes.",
-        ],
-      },
-      {
-        label: "What I did",
-        heading: "Affordability, surfaced early",
-        body: [
-          "The biggest lever wasn't the checkout step — it was moving the affordability message upstream. '₹999/month' on the product page reframes the decision before sticker shock ever hits. By the time the shopper reaches checkout, they've already decided in monthly terms.",
-          "At checkout, I unified the options into a single affordability layer: card EMI, cardless EMI, and BNPL presented as one ranked list with honest monthly numbers and no-cost-EMI called out where it applied.",
+          "Card EMI was held back by manual onboarding and brittle routing. I automated lender onboarding and built dynamic routing that sends each transaction down the path most likely to succeed, which drove 3X GMV and a 45% lift in success rate.",
+          "I then went further than card EMI. I built a whitelabel Pay-in-3 that embeds credit directly at checkout for credit-first buyers, and launched BNPL rails with Axio, Lazypay, and Simpl as first-class payment methods.",
         ],
         list: [
-          { title: "On-page EMI widget", text: "the lowest monthly figure shown on the product page, so affordability leads the decision." },
-          { title: "Unified plan selector", text: "one screen ranking every eligible plan by real monthly cost, no-cost EMI flagged." },
-          { title: "Instant eligibility", text: "cardless and BNPL eligibility resolved in the flow, so the shopper never hits a dead end after committing." },
+          { title: "3X GMV, +45% success", text: "automated onboarding and dynamic routing turned card EMI into a growth engine." },
+          { title: "Whitelabel Pay-in-3", text: "embedded credit at checkout for credit-first buyers, driving a 12% conversion uplift." },
+          { title: "+30% merchants", text: "launching BNPL (Axio, Lazypay, Simpl) as a payment rail expanded the merchant base 30%." },
         ],
         pull: "Move affordability upstream and checkout stops being where the doubt begins.",
       },
+      {
+        label: "The rails underneath",
+        heading: "Compliance is a feature, not an afterthought",
+        body: [
+          "Credit at checkout only works if the payment rails are trusted. I led 3DS 2.0 and network tokenization across Visa, Mastercard, and RuPay, improving authentication success while keeping the whole stack compliant with RBI mandates.",
+          "That is the unglamorous half of fintech product work, and it is the half that decides whether any of the growth is real or just a demo.",
+        ],
+      },
     ],
     impact: [
-      { value: "‹X›%", label: "AOV uplift on EMI-eligible carts" },
-      { value: "‹X›%", label: "of high-ticket GMV on EMI/BNPL" },
-      { value: "‹X›", label: "lenders & networks live" },
-      { value: "‹X›%", label: "eligibility resolved in-flow" },
+      { value: "3X", label: "card EMI GMV" },
+      { value: "+45%", label: "payment success rate" },
+      { value: "+12%", label: "conversion from Pay-in-3" },
+      { value: "+30%", label: "merchants via BNPL rails" },
     ],
     learned:
-      "Financial products win on framing as much as on rates. The same loan is a 'no' as a lump sum and a 'yes' as a monthly line — and where you show it matters more than what it costs. Design the moment, not just the mechanism.",
+      "Financial products win on framing and on plumbing in equal measure. The same loan is a no as a lump sum and a yes as a monthly line, but neither matters unless onboarding, routing, settlements, and compliance actually hold up underneath.",
   },
 
   // ── 4. B2B BNPL & Credit ──────────────────────────────────
   {
     slug: "b2b-credit",
     order: 4,
-    title: "Underwriting the businesses banks won't",
+    title: "Embedding credit for B2B marketplaces",
     kicker: "B2B BNPL & Credit",
     oneLiner:
-      "Consumer credit is a solved shape. B2B credit is a different animal — bigger tickets, thinner data, real balance-sheet risk. I built the product that extends terms to businesses banks ignore.",
-    role: "Product lead — B2B credit",
-    timeframe: "‹2023–2025›",
-    tags: ["B2B", "Credit", "Underwriting", "Working capital"],
+      "I piloted B2B embedded credit for marketplaces like Reliance and Flipkart, partnering with lending providers to extend working capital at the point of purchase.",
+    role: "Product Manager, Core Payments",
+    timeframe: "Cashfree Payments, 2022 to 2025",
+    tags: ["B2B", "Embedded credit", "Working capital", "0 to 1"],
     heroMetrics: [
-      { value: "₹‹X›Cr", label: "credit disbursed to businesses" },
-      { value: "‹X›%", label: "approval on thin-file applicants" },
-      { value: "‹X›%", label: "portfolio delinquency", sub: "held below target" },
+      { value: "0 to 1", label: "new B2B credit charter" },
+      { value: "Reliance, Flipkart", label: "marquee marketplace pilots" },
+      { value: "15+", label: "lending partners across the credit charter" },
     ],
     sections: [
       {
         label: "The problem",
         heading: "A missing rung on the ladder",
         body: [
-          "A small business buying inventory from a supplier has a cash-flow gap: pay now, sell over the next 30–60 days. A bank line of credit for that gap takes weeks of paperwork and often a 'no' — small businesses are thin-file, informal, and expensive to underwrite one at a time.",
-          "So they run on their own cash, or on the supplier's goodwill, and growth is capped by whatever's in the bank this week. There's a whole rung missing on the ladder between consumer BNPL and a proper bank facility.",
+          "A business buying inventory on a marketplace has a cash-flow gap: pay the supplier now, sell over the next 30 to 60 days. A bank line for that gap takes weeks of paperwork and often a no, because small businesses are thin-file and expensive to underwrite one at a time. There is a whole rung missing between consumer BNPL and a proper bank facility.",
+          "Coming off the consumer EMI and BNPL charter, I took embedded credit into B2B, a very different animal: larger tickets, thinner data, and real balance-sheet risk.",
         ],
         pull: "The businesses that most need credit are the ones the system finds hardest to read.",
       },
       {
-        label: "The constraint",
-        heading: "Real money, real losses",
+        label: "The build",
+        heading: "Credit at the point of purchase",
         body: [
-          "This is where it stops being a UX problem and becomes a balance-sheet one. Every approval is a bet with real capital; every default is a real loss. You can't A/B-test your way out of a bad credit policy.",
-          "The tickets are larger, the data is thinner and messier than a consumer's, and the downside is asymmetric — approve too loosely and the portfolio bleeds, too tightly and the product has no reason to exist. Correctness isn't a nice-to-have; it's the entire game.",
+          "I piloted B2B embedded credit for marketplaces like Reliance and Flipkart, partnering with lending providers rather than taking the balance-sheet risk ourselves. The buyer draws working capital at the moment of purchase, sized to their real cash-conversion cycle, and the marketplace closes more and larger orders.",
+          "The product work was in the seams: underwriting against the transaction and settlement data that already flows through the platform, and designing the integration so credit felt like a native payment method rather than a separate loan application.",
         ],
-      },
-      {
-        label: "What I did",
-        heading: "Underwrite on the data you actually have",
-        body: [
-          "Instead of demanding the bank-grade documents businesses don't have, I built underwriting around the data that already flows through a payments platform: transaction history, settlement patterns, GST signals, and repayment behaviour on the network.",
-          "The product wrapped that into a credit line a business could draw on to pay suppliers, with terms that matched their real cash-conversion cycle — and a risk framework that could say a fast, defensible yes or no.",
-        ],
-        list: [
-          { title: "Data-native underwriting", text: "score businesses on payment and settlement flows they already generate, not paperwork they don't have." },
-          { title: "Drawable credit line", text: "revolving terms sized to the business's actual working-capital cycle, not a one-size ticket." },
-          { title: "Risk guardrails", text: "exposure limits, cohort monitoring, and early-warning signals to keep delinquency inside target as volume scaled." },
-        ],
-        pull: "The winning move was underwriting on the exhaust the business already produces.",
       },
     ],
     impact: [
-      { value: "₹‹X›Cr", label: "credit disbursed" },
-      { value: "‹X›%", label: "approval on thin-file applicants" },
-      { value: "‹X›%", label: "delinquency held below target" },
-      { value: "‹X›", label: "businesses with active lines" },
+      { value: "0 to 1", label: "B2B embedded credit, launched as a pilot" },
+      { value: "Reliance, Flipkart", label: "marquee marketplace partners" },
+      { value: "Data-native", label: "underwriting on existing payment flows" },
     ],
     learned:
-      "In credit, the product and the risk model are the same object — you can't ship a beautiful flow on top of a policy that loses money. Building it taught me to hold two disciplines at once: the empathy to say yes to underserved businesses, and the rigour to make each yes one you can defend on the balance sheet.",
+      "In B2B credit the product and the risk model are the same object. You cannot ship a beautiful flow on top of a policy that loses money. It taught me to hold two disciplines at once: the empathy to say yes to underserved businesses, and the rigour to make each yes one you can defend.",
   },
 
-  // ── 5. Simplq ─────────────────────────────────────────────
+  // ── 5. SimplQ ─────────────────────────────────────────────
   {
     slug: "simplq",
     order: 5,
-    title: "Simplq — the product I built to prove I could",
-    kicker: "Personal 0→1 project",
+    title: "SimplQ, an open-source queue manager",
+    kicker: "Open-source project",
     oneLiner:
-      "No team, no roadmap, no cover. Just an idea, and the discipline to ship it end to end. Simplq is where I go from PM to builder.",
-    role: "Solo — everything",
-    timeframe: "‹2022–present›",
-    tags: ["0→1", "Solo build", "Full-stack", "Product"],
+      "A crowd management platform I ideated and built with 100+ open-source contributors. Piloted at IIM Bangalore student stores, scaled to 2,000+ monthly active users, and selected for incubation at AGBI.",
+    role: "Creator and product lead",
+    timeframe: "2020 to 2022",
+    tags: ["0 to 1", "Open source", "PMF", "Full-stack"],
     heroMetrics: [
-      { value: "1", label: "person: design, build, ship" },
-      { value: "‹X›", label: "users / signups", sub: "‹PLACEHOLDER›" },
-      { value: "100%", label: "of the stack, owned" },
+      { value: "2,000+", label: "monthly active users" },
+      { value: "100+", label: "open-source contributors" },
+      { value: "AGBI", label: "selected for incubation" },
     ],
     sections: [
       {
         label: "Why",
-        heading: "Because specs aren't proof",
+        heading: "Because specs are not proof",
         body: [
-          "A PM can spend a career describing products other people build. I wanted to know I could take an idea the whole way myself — problem, design, code, launch — without a team to hand off to.",
-          "Simplq is ‹one-line description of what Simplq does — Sajmal to fill in›. I built it solo: the product decisions, the interface, the code, and every unglamorous thing in between.",
+          "A PM can spend a career describing products other people build. I wanted to prove I could take an idea the whole way myself. SimplQ came from a simple observation during the pandemic: crowds needed to be managed, and every existing tool needed complex setup.",
+          "So I built the opposite, inspired by frictionless tools like Jitsi and Skribbl.io. You generate a queue with a shareable link, send it out, and manage everyone from an admin panel with notifications and direct contact. No installs, no accounts to stand in a line.",
         ],
-        pull: "The gap between 'I think this should exist' and 'here, use it' is where you find out who you are.",
+        pull: "The gap between I think this should exist and here, use it is where you find out who you are.",
       },
       {
-        label: "What it taught me",
-        heading: "The whole stack, no hand-offs",
+        label: "The build",
+        heading: "React, Java, and a real community",
         body: [
-          "Building alone strips away the abstractions. There's no 'engineering will handle it.' Every trade-off between scope and ship date is yours; every rough edge is yours to sand or live with. It made me a sharper PM because I've now paid the cost of my own decisions.",
-          "It's also where I got hands-on with modern build tooling and AI-assisted development — the same instincts I'd bring to building products at an AI company.",
+          "I built it open source with a React frontend and a Java backend, and rallied a community of 100+ contributors around it. That meant doing the actual product-management job on a volunteer team: writing issues, setting direction, keeping it simple against constant pressure to add features.",
+          "I led the push for product-market fit, piloted it at student-run stores across IIM Bangalore, and grew it to 2,000+ monthly active users. It was selected for incubation at AGBI.",
         ],
       },
     ],
     impact: [
-      { value: "0→1", label: "conceived, built, shipped solo" },
-      { value: "‹X›", label: "users / signups ‹PLACEHOLDER›" },
-      { value: "‹X›", label: "‹key metric — Sajmal to define›" },
+      { value: "2,000+", label: "monthly active users" },
+      { value: "100+", label: "open-source contributors" },
+      { value: "IIMB", label: "piloted at student-run stores" },
+      { value: "AGBI", label: "selected for incubation" },
     ],
     learned:
-      "You don't fully understand a product until you've had to build it, not just brief it. Simplq is my proof that I can — and the reason I'm confident I can go from PM to builder inside an AI company from day one.",
+      "You do not fully understand a product until you have had to build it, not just brief it. SimplQ is why I am confident I can go from PM to builder from day one, and why building alongside a community taught me more about prioritisation than any roadmap ever did.",
   },
 ];
 
-export const vibeProjects = [
-  {
-    name: "CareerFind",
-    tagline: "Science-based career guidance for Indian students",
-    description:
-      "A web app that turns a scenario-based personality and interest assessment (Big Five + RIASEC) into concrete career and college recommendations — with a downloadable report at the end. Built with Next.js and a rule-based matching engine.",
-    stack: ["Next.js", "TypeScript", "Psychometrics", "PDF export"],
-    href: "#", // ‹PLACEHOLDER live URL›
-  },
-  {
-    name: "AI CRO Audit — CROScore",
-    tagline: "AI-powered conversion-rate-optimization audits",
-    description:
-      "An AI tool that audits a brand's checkout and conversion funnel and returns a prioritised set of fixes — putting the CRO instincts I've built at Cashfree into an automated, self-serve product.",
-    stack: ["AI / LLM", "Next.js", "CRO", "Growth"],
-    href: "#", // ‹PLACEHOLDER live URL›
-  },
-];
+export const nowBuilding = {
+  name: "CROScore",
+  tagline: "AI-powered conversion-rate-optimization audits",
+  description:
+    "An AI tool that audits a brand's checkout and conversion funnel and returns a prioritised set of fixes. It takes the CRO instincts I built scaling checkout at Cashfree and puts them into an automated, self-serve product. It is also how I am learning to build with LLMs in production, the same instinct I want to bring to an AI company.",
+  stack: ["AI / LLM", "Next.js", "CRO", "Growth"],
+  href: "#", // ‹PLACEHOLDER live URL›
+};
 
 export const about = {
   intro: [
-    "I'm Sajmal — a product manager who has spent the last few years in the least forgiving corner of product: payments, where a bug isn't a bad UX, it's someone's money.",
-    "My work sits at the seam of checkout, credit, and risk at Cashfree. I've shipped the layer that stops returns before they ship, the one-tap checkout and offer engine that turns intent into revenue, the affordability tools that make big carts feel small, and the B2B credit product that underwrites businesses the banks won't touch.",
+    "I am Sajmal, a Product Manager with 4+ years across payments, fintech, and D2C commerce. I spend my time in the least forgiving corner of product, where a bug is not a bad UX, it is someone's money.",
+    "As the founding PM for D2C checkout at Cashfree, I built the vertical from zero to $100M in annual TPV and 1,000+ merchants. Before that I owned the EMI, BNPL, and core payments charter, scaling checkout financing 3X. I started as a software engineer at JP Morgan, where I built an AI engine serving 4,000+ banking clients and cut email servicing time by 95%.",
   ],
   throughline: [
-    "The thread through all of it is the same: take a problem where real money and real trust are on the line, live in the ambiguity long enough to actually understand it, and ship something people rely on.",
-    "That's also why I want to build in AI next. It's the same shape of problem at a bigger scale — high stakes, deep ambiguity, and a need for products that earn trust. I've already started building with it: CareerFind, an AI CRO audit tool, and Simplq, all shipped on the side. I want to do that as the main thing.",
+    "The thread through all of it is the same: take a problem where real money and real trust are on the line, sit in the ambiguity long enough to actually understand it, and ship something people rely on. I care about growth and monetisation as outcomes, not vanity metrics.",
+    "I want to build in AI next because it is the same shape of problem at a bigger scale. I have built with AI since JP Morgan, shipped an AI insights mailer to 1,000+ merchants, and I am now building CROScore, an AI CRO audit tool, on the side. I want to do that as the main thing.",
   ],
   values: [
     { title: "Ship the proof, not just the product", text: "A number a merchant can see beats a promise a merchant has to believe." },
-    { title: "Live in the ambiguity", text: "The best problems don't come pre-scoped. Judgment is knowing which edge to sand and which to keep." },
-    { title: "Own the whole cost", text: "Every trade-off has a bill. I'd rather be the one who pays it than the one who passes it on." },
+    { title: "Reframe before you build", text: "Partial COD hurt conversion until I reframed RTO as risk segmentation. The best move is often a better question." },
+    { title: "Own the whole stack", text: "Growth is worthless if settlements, routing, and compliance do not hold up underneath it. I own both halves." },
+  ],
+  credentials: [
+    { label: "MBA, IIM Bangalore", detail: "Post Graduate Programme, 2020 to 2022" },
+    { label: "B.Tech CSE, NIT Calicut", detail: "Computer Science, 2014 to 2018" },
+    { label: "Community Winner, UN Hackathon", detail: "1 of 8 from 2,000+ teams, 2022" },
+    { label: "National Finalist, PwC Innovation Challenge", detail: "12 of 1,500+ teams, 2021" },
+    { label: "2 IEEE papers on AI malware detection", detail: "40+ citations, 2017" },
   ],
 };

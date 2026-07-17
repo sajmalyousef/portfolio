@@ -5,7 +5,7 @@ import { profile, about, caseStudies } from "@/lib/content";
 import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: `About — ${profile.name}`,
+  title: `About · ${profile.name}`,
   description: profile.thesis,
 };
 
@@ -47,7 +47,7 @@ export default function AboutPage() {
         {/* Values */}
         <Reveal>
           <div className="mt-20">
-            <p className="label mb-8">How I work</p>
+            <p className="label mb-8">What I believe</p>
             <div className="space-y-px overflow-hidden rounded-2xl border border-border">
               {about.values.map((v) => (
                 <div key={v.title} className="bg-bg-card p-7">
@@ -61,18 +61,33 @@ export default function AboutPage() {
           </div>
         </Reveal>
 
+        {/* Credentials */}
+        <Reveal>
+          <div className="mt-20">
+            <p className="label mb-8">Education and accolades</p>
+            <ul className="divide-y divide-border overflow-hidden rounded-2xl border border-border">
+              {about.credentials.map((c) => (
+                <li
+                  key={c.label}
+                  className="flex flex-col gap-1 bg-bg-card p-6 sm:flex-row sm:items-center sm:justify-between"
+                >
+                  <span className="font-medium text-text">{c.label}</span>
+                  <span className="text-sm text-text-dim">{c.detail}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </Reveal>
+
         {/* Links */}
         <Reveal>
           <div className="mt-20 flex flex-wrap gap-4">
             {[
               { label: "LinkedIn", href: profile.links.linkedin },
-              { label: "GitHub", href: profile.links.github },
               { label: "Résumé", href: profile.links.resume },
               {
                 label: "Email",
-                href: profile.links.email.startsWith("http")
-                  ? profile.links.email
-                  : `mailto:${profile.links.email}`,
+                href: `mailto:${profile.links.email}`,
               },
             ].map((l) => (
               <a
@@ -90,7 +105,7 @@ export default function AboutPage() {
         <Reveal>
           <div className="mt-20 border-t border-border pt-10">
             <p className="text-text-muted">
-              Or jump straight into the work —{" "}
+              Or jump straight into the work:{" "}
               <Link href="/#work" className="link-sweep text-accent">
                 {caseStudies.length} case studies
               </Link>
