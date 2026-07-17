@@ -11,7 +11,7 @@ export const profile = {
   headlineAccent: "payments products",
   headlineBottom: "from 0 to 1.",
   thesis:
-    "Product Manager with 4+ years across payments, fintech, and D2C commerce.",
+    "Product Manager across payments, fintech, and D2C commerce.",
   subthesis:
     "Founding PM for D2C checkout at Cashfree, scaled to $100M in annual TPV, 1,000+ merchants, and a 40% lift in conversion. Now I want to build in AI.",
   links: {
@@ -340,18 +340,28 @@ export const caseStudies: CaseStudy[] = [
   },
 ];
 
-export const nowBuilding = {
-  name: "CROScore",
-  tagline: "AI-powered conversion-rate-optimization audits",
-  description:
-    "An AI tool that audits a brand's checkout and conversion funnel and returns a prioritised set of fixes. It takes the CRO instincts I built scaling checkout at Cashfree and puts them into an automated, self-serve product. It is also how I am learning to build with LLMs in production, the same instinct I want to bring to an AI company.",
-  stack: ["AI / LLM", "Next.js", "CRO", "Growth"],
-  href: "#", // ‹PLACEHOLDER live URL›
-};
+export const aiProjects = [
+  {
+    name: "CROScore",
+    tagline: "AI conversion-rate-optimization audits",
+    description:
+      "An AI tool that audits a brand's checkout and conversion funnel and returns a prioritised set of fixes. It takes the CRO instincts I built scaling checkout at Cashfree and puts them into an automated, self-serve product.",
+    stack: ["AI / LLM", "Next.js", "CRO", "Growth"],
+    href: "#", // ‹PLACEHOLDER live URL›
+  },
+  {
+    name: "CareerScore",
+    tagline: "AI career guidance for students",
+    description:
+      "An AI tool that turns a science-based personality and interests assessment into concrete career and college recommendations, with a downloadable report. Built to make good career guidance accessible at scale.",
+    stack: ["AI / LLM", "Next.js", "Psychometrics", "PDF"],
+    href: "#", // ‹PLACEHOLDER live URL›
+  },
+];
 
 export const about = {
   intro: [
-    "I am Sajmal, a Product Manager with 4+ years across payments, fintech, and D2C commerce. I spend my time in the least forgiving corner of product, where a bug is not a bad UX, it is someone's money.",
+    "I am Sajmal, a Product Manager across payments, fintech, and D2C commerce. I spend my time in the least forgiving corner of product, where a bug is not a bad UX, it is someone's money.",
     "As the founding PM for D2C checkout at Cashfree, I built the vertical from zero to $100M in annual TPV and 1,000+ merchants. Before that I owned the EMI, BNPL, and core payments charter, scaling checkout financing 3X. I started as a software engineer at JP Morgan, where I built an AI engine serving 4,000+ banking clients and cut email servicing time by 95%.",
   ],
   throughline: [
