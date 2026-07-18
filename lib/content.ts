@@ -351,9 +351,9 @@ export const aiProjects = [
   },
   {
     name: "CareerFind",
-    tagline: "AI career guidance for students",
+    tagline: "Career decisions, made logical",
     description:
-      "An AI tool that turns a science-based personality and interests assessment into concrete career and college recommendations, with a downloadable report. Built to make good career guidance accessible at scale.",
+      "Most Indian kids choose a career from what relatives say at dinner, what their friends pick, or which coaching institute has the biggest banner. They are 15-year-olds making 40-year decisions. CareerFind uses real psychological frameworks instead: 20 questions, a detailed report, and a clear read on what fits and what does not.",
     stack: ["AI / LLM", "Next.js", "Psychometrics", "PDF"],
     href: "https://careerfindapp.vercel.app/",
   },
