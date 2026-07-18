@@ -369,12 +369,13 @@ export const aiProjects = [
 
 export const about = {
   intro: [
-    "I am Sajmal, a Product Manager across payments, fintech, and D2C commerce. I spend my time in the least forgiving corner of product, where a bug is not a bad UX, it is someone's money.",
-    "As the founding PM for D2C checkout at Cashfree, I built the vertical from zero to $100M in annual TPV and 3,000+ businesses. Before that I owned the EMI, BNPL, and core payments charter, scaling checkout financing 3X. I started as a software engineer at JP Morgan, where I built an AI engine serving 4,000+ banking clients and cut email servicing time by 95%.",
+    "I was raised on three things: do your best, be kind, and stay humble. Nobody in my world talked about IITs or IIMs or how big a life could get, so I just tried to be good at whatever was in front of me.",
+    "People I met along the way believed in me and helped me reach NIT Calicut, which gave me something I had never been given permission to do: dream. I studied Computer Science because it looked like a safe, well-paying desk job.",
+    "My first job checked off the small ambitions I grew up with. But the real pull came from something quieter, seeing a person use what I built and watching their day get simpler. That, it turned out, is called product management, and until 2020 I did not even know it was a job.",
+    "I built things with friends, chased real adoption, and found deep satisfaction in it. IIM Bangalore sharpened me and surrounded me with big dreamers. Today I build payments and checkout for small businesses, always close to the people using it, trying to make their lives easier and the business bigger.",
   ],
   throughline: [
-    "The thread through all of it is the same: life is hard enough, so I find the thing quietly making it harder, sit with it long enough to truly understand it, and build something that makes people's lives easier and earns big for the business. I care about growth and monetisation as outcomes, not vanity metrics.",
-    "Right now I am playing with AI, and I want to make it big with it. I have built with AI since JP Morgan, where I shipped an engine for 4,000+ banking clients, then an AI insights mailer for 1,000+ merchants, and I am now building CROScore and CareerScore on the side. Same shape of problem, bigger canvas.",
+    "Right now I am playing with AI, and I want to make it big with it. I have built with AI since JP Morgan, where I shipped an engine for 4,000+ banking clients, then an AI insights mailer for 1,000+ merchants, and I am now building CareerFind, CROScore, and Watch This on the side. Same shape of problem, bigger canvas.",
   ],
   values: [
     { title: "Ship the proof, not just the product", text: "A number a merchant can see beats a promise a merchant has to believe." },
