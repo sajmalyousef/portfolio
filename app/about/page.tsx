@@ -26,8 +26,8 @@ export default function AboutPage() {
           />
           <p className="label mb-5">The story</p>
           <h1 className="font-display text-5xl font-bold text-text sm:text-6xl">
-            From payments to{" "}
-            <span className="text-accent">what&rsquo;s next</span>.
+            At the intersection of{" "}
+            <span className="text-accent">fintech and commerce</span>.
           </h1>
         </div>
       </header>
