@@ -350,12 +350,12 @@ export const aiProjects = [
     href: "#", // ‹PLACEHOLDER live URL›
   },
   {
-    name: "CareerScore",
+    name: "CareerFind",
     tagline: "AI career guidance for students",
     description:
       "An AI tool that turns a science-based personality and interests assessment into concrete career and college recommendations, with a downloadable report. Built to make good career guidance accessible at scale.",
     stack: ["AI / LLM", "Next.js", "Psychometrics", "PDF"],
-    href: "#", // ‹PLACEHOLDER live URL›
+    href: "https://careerfindapp.vercel.app/",
   },
 ];
 

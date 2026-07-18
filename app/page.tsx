@@ -109,6 +109,8 @@ export default function Home() {
             <Reveal key={p.name} delay={i * 0.08}>
               <a
                 href={p.href}
+                target={p.href.startsWith("http") ? "_blank" : undefined}
+                rel={p.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="group flex h-full flex-col rounded-2xl border border-border bg-bg-card p-7 transition-colors hover:border-border-strong"
               >
                 <div className="mb-5 flex items-start justify-between">
