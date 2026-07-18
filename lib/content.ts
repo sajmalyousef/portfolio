@@ -11,8 +11,7 @@ export const profile = {
   headshot: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/headshot.jpg`,
   headlineLead: "I build and scale",
   headlineAccent: "acquisition and growth products",
-  headlineRest:
-    "in payments, ecommerce, and credit, focused on SMBs, from 0 to 1 and beyond.",
+  headlineRest: "for SMBs, from 0 to 1 and beyond.",
   thesis:
     "Product Manager across payments, fintech, and D2C commerce.",
   subthesis:
@@ -128,14 +127,14 @@ export const caseStudies: CaseStudy[] = [
     title: "Cutting RTO from 25% to 4%",
     kicker: "Return to Origin",
     oneLiner:
-      "COD returns were eating merchant margins. I built RTO Intelligence and Partial COD, cutting return rates from 25% to 4% and unlocking $2.5M in annual revenue.",
+      "COD returns were eating merchant margins. I built RTO Intelligence and Partial COD controls, cutting return rates from 25% to 4%.",
     role: "Product Manager, D2C Checkout",
     timeframe: "Cashfree Payments, 2025 to present",
     tags: ["Risk", "COD", "Logistics", "Revenue"],
     heroMetrics: [
       { value: "25% → 4%", label: "RTO rate on managed orders" },
-      { value: "$2.5M", label: "annual revenue unlocked", sub: "Partial COD" },
       { value: "30%", label: "RTO reduction overall" },
+      { value: "2.5B+", label: "logistics data points modelled" },
     ],
     sections: [
       {
@@ -151,15 +150,15 @@ export const caseStudies: CaseStudy[] = [
         heading: "RTO Intelligence and Partial COD",
         body: [
           "Partial COD asks for a small upfront payment on COD orders to filter low-intent buyers. It cut RTO but also hurt conversion, so I reframed it as risk segmentation: add friction only to risky orders.",
-          "RTO Intelligence scores every COD order in real time on address quality, buyer history, pincode performance, and 2.5B+ logistics data points. Merchants set their own controls per order: allow, block, convert to prepaid, or Partial COD. RTO fell from 25% to 4%, and Partial COD added $2.5M in annual revenue.",
+          "RTO Intelligence scores every COD order in real time on address quality, buyer history, pincode performance, and 2.5B+ logistics data points. Merchants set their own controls per order: allow, block, convert to prepaid, or Partial COD. RTO fell from 25% to 4%.",
         ],
       },
     ],
     impact: [
       { value: "25% → 4%", label: "RTO rate on managed orders" },
       { value: "30%", label: "overall RTO reduction" },
-      { value: "$2.5M", label: "annual revenue from Partial COD" },
       { value: "2.5B+", label: "logistics data points modelled" },
+      { value: "Real-time", label: "scoring on every COD order" },
     ],
     learned:
       "A risk product only works if merchants trust it enough to act on the score. Giving each merchant controls tuned to their own margins is what earned that trust.",
@@ -170,51 +169,58 @@ export const caseStudies: CaseStudy[] = [
     slug: "checkout-financing",
     order: 3,
     title: "Scaling checkout financing",
-    kicker: "EMI, BNPL & B2B Credit",
+    kicker: "Core Payments",
     oneLiner:
-      "I owned the consumer credit charter across 15+ banks and lenders, growing card EMI GMV 3X and payment success 45%, then took embedded credit into B2B marketplaces.",
+      "I owned the EMI, BNPL, and core payments credit charter across 15+ banks and PSPs. I scaled Card EMI 3X, added new ways to pay at checkout, and piloted B2B credit for marketplaces.",
     role: "Product Manager, Core Payments",
     timeframe: "Cashfree Payments, 2022 to 2025",
     tags: ["Credit", "EMI", "BNPL", "B2B"],
     heroMetrics: [
       { value: "3X", label: "card EMI GMV growth" },
       { value: "+45%", label: "payment success rate" },
-      { value: "15+", label: "banks and lending partners" },
+      { value: "15+", label: "banks and PSPs integrated" },
     ],
     sections: [
       {
-        label: "The problem",
-        heading: "Above a few thousand rupees, price is the objection",
+        label: "The charter",
+        heading: "One credit charter, 15+ banks and PSPs",
         body: [
-          "EMI and BNPL fix affordability, but in India that means card EMI across a dozen banks, cardless EMI, and several BNPL lenders, each with their own eligibility and rules.",
-          "I owned the full charter across 15+ banks and partners: onboarding, payments, refunds, settlements, and reconciliation.",
+          "I owned the EMI and BNPL charter, integrating 15+ banks and PSPs and running the full flow behind it: payments, refunds, settlements, and reconciliation.",
+          "In India this market is fragmented. Card EMI alone spans a dozen banks, each with its own eligibility, tenures, and rules, so a lot of the work was making all of it feel like one clean option to the shopper.",
         ],
       },
       {
-        label: "Consumer credit",
-        heading: "Automated onboarding, dynamic routing, embedded credit",
+        label: "Card EMI",
+        heading: "Dynamic routing, 3X GMV",
         body: [
-          "I automated lender onboarding and built dynamic routing that sends each transaction down the path most likely to succeed. Card EMI GMV grew 3X and success rose 45%.",
-          "I built a whitelabel Pay-in-3 that embeds credit at checkout, which lifted conversion 12%, and launched BNPL rails with top lenders, expanding the merchant base 30%. I also led 3DS 2.0 and tokenization across Visa, Mastercard, and RuPay to keep the stack RBI-compliant.",
+          "I scaled Card EMI for customers including Meesho and EaseMyTrip. The biggest lever was dynamic routing, which sends each transaction down the path most likely to go through. That took the success rate up 45% and grew GMV 3X.",
         ],
       },
       {
-        label: "B2B credit",
-        heading: "Extending credit to B2B marketplaces",
+        label: "New ways to pay",
+        heading: "More payment options at checkout",
         body: [
-          "A business buying inventory on a marketplace pays the supplier now and sells over the next 30 to 60 days. Bank credit for that gap is slow and often declined, because small businesses are thin-file.",
-          "I piloted embedded credit for large marketplaces, partnering with lenders rather than holding the risk ourselves. Buyers draw working capital at purchase, underwritten on the transaction and settlement data already on the platform, so credit works like a payment method, not a separate loan application.",
+          "From there I kept adding ways to pay that fit how Indian shoppers actually buy. I built a whitelabel Pay-in-3 that embeds credit at checkout for credit-first buyers, which lifted conversion 12%. I launched BNPL with Axio, Lazypay, and Simpl as a full payment rail through top lending PSPs, which grew the merchant base 30%.",
+          "I also introduced partial payments on COD, a localized construct that lets a shopper pay part of the order upfront. It became a real revenue line at around $25M a year. And I integrated gift cards as a new prepaid paymode, widening alternative payment coverage and adding another way to convert.",
+        ],
+      },
+      {
+        label: "B2B credit and the rails",
+        heading: "B2B credit, and the plumbing underneath",
+        body: [
+          "I piloted B2B embedded credit for marketplaces like Reliance and Flipkart, partnering with lending providers so businesses could draw working capital right at the point of purchase, underwritten on the payment data they already generate.",
+          "Underneath all of it, I led 3DS 2.0 and tokenization across Visa, Mastercard, and RuPay, which improved authentication and kept the stack compliant with RBI mandates.",
         ],
       },
     ],
     impact: [
       { value: "3X", label: "card EMI GMV" },
       { value: "+45%", label: "payment success rate" },
-      { value: "+12%", label: "conversion from Pay-in-3" },
+      { value: "$25M", label: "annual revenue from Partial COD" },
       { value: "+30%", label: "merchants via BNPL rails" },
     ],
     learned:
-      "Framing and plumbing matter equally, in consumer and B2B credit alike. A loan is a no as a lump sum and a yes as a monthly line, but only if onboarding, routing, settlements, and underwriting hold up underneath.",
+      "Framing and plumbing matter equally. A big cart is a no as a lump sum and a yes as a monthly line or a part-payment, but only if onboarding, routing, settlements, and compliance hold up underneath.",
   },
 
   // ── 4. SimplQ ─────────────────────────────────────────────
