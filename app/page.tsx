@@ -85,10 +85,12 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-2">
             {featured.posts.map((p) => (
               <Reveal key={p.src}>
-                <div>
+                <div className="flex h-full flex-col">
                   <p className="label mb-2">{p.tag}</p>
-                  <p className="mb-4 text-lg leading-snug text-text">{p.line}</p>
-                  <div className="overflow-hidden rounded-2xl border border-border bg-bg-card">
+                  <p className="mb-4 text-lg leading-snug text-text md:min-h-[3.25rem]">
+                    {p.line}
+                  </p>
+                  <div className="mt-auto overflow-hidden rounded-2xl border border-border bg-bg-card">
                     <iframe
                       src={p.src}
                       title={p.tag}

@@ -308,6 +308,18 @@ export const featured = {
         "How Cashfree's One-Click Checkout and Sepoy & Co cracked the D2C conversion code",
       href: "https://yourstory.com/2026/06/cashfree-payments-one-click-checkout-sepoy-co-crack-d2c-conversion-code",
     },
+    {
+      source: "Livemint",
+      title:
+        "KreditBee partners Cashfree Payments to offer online checkout finance",
+      href: "https://www.livemint.com/companies/news/kreditbee-partners-cashfree-payments-to-offer-online-checkout-finance-11661240748876.html",
+    },
+    {
+      source: "Times of India",
+      title:
+        "FreeCharge partners with Cashfree Payments, offers Buy Now Pay Later",
+      href: "https://timesofindia.indiatimes.com/business/india-business/freecharge-partners-with-cashfree-payments-offers-buy-now-pay-later/articleshow/94479258.cms",
+    },
   ],
 };
 

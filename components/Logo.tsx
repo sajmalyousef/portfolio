@@ -8,18 +8,19 @@ export function Logo({ className }: { className?: string }) {
       aria-label="Sajmal and Hiba monogram"
     >
       <rect width="64" height="64" rx="16" fill="var(--accent)" />
-      <g
-        fill="none"
-        stroke="#0a0a0b"
-        strokeWidth="5.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+      <text
+        x="32"
+        y="34"
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontFamily="var(--font-display), Arial, sans-serif"
+        fontSize="30"
+        fontWeight="700"
+        letterSpacing="-2"
+        fill="#0a0a0b"
       >
-        <path d="M30 25 C30 19 15 19 15 26 C15 32 30 31 30 38 C30 45 15 45 15 39" />
-        <path d="M39 20 V44" />
-        <path d="M51 20 V44" />
-        <path d="M39 32 H51" />
-      </g>
+        SH
+      </text>
     </svg>
   );
 }

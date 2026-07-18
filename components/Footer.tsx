@@ -19,9 +19,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col gap-4 border-t border-border pt-8 text-sm text-text-dim sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            © {year} {profile.name}. Built from scratch.
-          </p>
+          <p>© {year} {profile.name}.</p>
           <div className="flex gap-6">
             <a href={profile.links.linkedin} className="link-sweep transition-colors hover:text-text">
               LinkedIn
