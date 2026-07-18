@@ -325,11 +325,13 @@ export const aiProjects = [
 export const featured = {
   posts: [
     {
-      label: "One-Click Checkout & Offer Engine",
+      tag: "Conversion",
+      line: "Why checkout conversion is the cheapest growth lever when CAC keeps rising.",
       src: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7404492798001020928?compact=1",
     },
     {
-      label: "Return to Origin",
+      tag: "RTO",
+      line: "Optimising for orders delivered, not just orders placed.",
       src: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7450766407153397761?compact=1",
     },
   ],
