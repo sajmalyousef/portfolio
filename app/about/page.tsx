@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { profile, about, caseStudies } from "@/lib/content";
 import { Reveal } from "@/components/Reveal";
@@ -15,6 +16,14 @@ export default function AboutPage() {
       <header className="relative overflow-hidden border-b border-border">
         <div className="glow left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2" />
         <div className="relative mx-auto max-w-3xl px-6 pb-16 pt-40">
+          <Image
+            src={profile.headshot}
+            alt="Sajmal Yousef"
+            width={400}
+            height={400}
+            priority
+            className="mb-8 h-28 w-28 rounded-2xl border border-border object-cover"
+          />
           <p className="label mb-5">The story</p>
           <h1 className="font-display text-5xl font-bold text-text sm:text-6xl">
             From payments to{" "}

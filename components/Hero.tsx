@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion } from "motion/react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowDown } from "lucide-react";
 import { profile } from "@/lib/content";
 
@@ -27,9 +28,19 @@ export function Hero() {
         animate="show"
         className="relative mx-auto w-full max-w-6xl"
       >
-        <motion.p variants={item} className="label mb-8">
-          {profile.name} · {profile.role}
-        </motion.p>
+        <motion.div variants={item} className="mb-8 flex items-center gap-4">
+          <Image
+            src={profile.headshot}
+            alt={profile.name}
+            width={400}
+            height={400}
+            priority
+            className="h-14 w-14 rounded-full border border-border object-cover"
+          />
+          <p className="label">
+            {profile.name} · {profile.role}
+          </p>
+        </motion.div>
 
         <motion.h1
           variants={item}

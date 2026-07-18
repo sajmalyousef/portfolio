@@ -97,10 +97,6 @@ export default function Home() {
                 Playing with AI.
               </h2>
             </div>
-            <p className="max-w-sm text-text-muted">
-              Side projects where I take the growth and CRO instincts from
-              checkout into AI-native tools, and try to make them big.
-            </p>
           </div>
         </Reveal>
 
