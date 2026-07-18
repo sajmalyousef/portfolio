@@ -44,13 +44,11 @@ export function Hero() {
 
         <motion.h1
           variants={item}
-          className="font-display text-5xl font-bold text-text sm:text-7xl lg:text-[5.5rem]"
+          className="font-display text-4xl font-bold text-text sm:text-5xl lg:text-6xl"
         >
-          {profile.headlineTop}
-          <br />
-          <span className="text-accent">{profile.headlineAccent}</span>
-          <br />
-          {profile.headlineBottom}
+          {profile.headlineLead}{" "}
+          <span className="text-accent">{profile.headlineAccent}</span>{" "}
+          {profile.headlineRest}
         </motion.h1>
 
         <motion.p

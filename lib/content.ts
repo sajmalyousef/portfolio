@@ -9,9 +9,10 @@ export const profile = {
   role: "Product Manager, Cashfree Payments",
   location: "Bengaluru, India",
   headshot: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/headshot.jpg`,
-  headlineTop: "I build and scale",
-  headlineAccent: "checkout for SMBs",
-  headlineBottom: "from 0 to 1 and beyond.",
+  headlineLead: "I build and scale",
+  headlineAccent: "acquisition and growth products",
+  headlineRest:
+    "in payments, ecommerce, and credit, focused on SMBs, from 0 to 1 and beyond.",
   thesis:
     "Product Manager across payments, fintech, and D2C commerce.",
   subthesis:
