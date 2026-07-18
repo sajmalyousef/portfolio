@@ -193,7 +193,7 @@ export const caseStudies: CaseStudy[] = [
         label: "Card EMI",
         heading: "Dynamic routing, 3X GMV",
         body: [
-          "I scaled Card EMI for customers including Meesho and EaseMyTrip. The biggest lever was dynamic routing, which sends each transaction down the path most likely to go through. That took the success rate up 45% and grew GMV 3X.",
+          "I scaled Card EMI across the merchant base. The biggest lever was dynamic routing, which sends each transaction down the path most likely to go through. That took the success rate up 45% and grew GMV 3X.",
         ],
       },
       {
@@ -208,7 +208,7 @@ export const caseStudies: CaseStudy[] = [
         label: "B2B credit and the rails",
         heading: "B2B credit, and the plumbing underneath",
         body: [
-          "I piloted B2B embedded credit for marketplaces like Reliance and Flipkart, partnering with lending providers so businesses could draw working capital right at the point of purchase, underwritten on the payment data they already generate.",
+          "I piloted B2B embedded credit for large marketplaces, partnering with lending providers so businesses could draw working capital right at the point of purchase, underwritten on the payment data they already generate.",
           "Underneath all of it, I led 3DS 2.0 and tokenization across Visa, Mastercard, and RuPay, which improved authentication and kept the stack compliant with RBI mandates.",
         ],
       },
