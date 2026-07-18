@@ -13,7 +13,7 @@ export const profile = {
   thesis:
     "Product Manager across payments, fintech, and D2C commerce.",
   subthesis:
-    "Founding PM for D2C checkout at Cashfree, scaled to $100M in annual TPV, 1,000+ merchants, and a 40% lift in conversion. Right now I am playing with AI, and I want to make it big.",
+    "Founding PM for D2C checkout at Cashfree, scaled to $100M in annual TPV, 3,000+ businesses, and a 40% lift in conversion. Right now I am playing with AI, and I want to make it big.",
   links: {
     email: "yousefsajmal1@gmail.com",
     phone: "+91-8714268343",
@@ -30,7 +30,7 @@ export const profile = {
   heroStats: [
     { value: "$100M", label: "annual TPV scaled from zero" },
     { value: "+40%", label: "checkout conversion lift" },
-    { value: "1,000+", label: "D2C merchants onboarded" },
+    { value: "3,000+", label: "D2C businesses onboarded" },
   ],
 };
 
@@ -67,14 +67,14 @@ export const caseStudies: CaseStudy[] = [
     title: "Scaling D2C checkout from 0 to $100M TPV",
     kicker: "One-Click Checkout + Offer Engine",
     oneLiner:
-      "As founding PM, I built and scaled Cashfree's D2C checkout to 1,000+ merchants and $100M in annual TPV, lifting conversion 40% with a 300+ construct offer engine on top.",
+      "As founding PM, I built and scaled Cashfree's D2C checkout to 3,000+ businesses and $100M in annual TPV, lifting conversion 40% with a 300+ construct offer engine on top.",
     role: "Founding PM, D2C Checkout",
     timeframe: "Cashfree Payments, 2025 to present",
     tags: ["0 to 1", "Conversion", "Offer engine", "Shopify"],
     heroMetrics: [
       { value: "$100M", label: "annual TPV", sub: "built from zero" },
       { value: "+40%", label: "checkout conversion lift", sub: "via A/B experiments" },
-      { value: "1,000+", label: "merchants onboarded" },
+      { value: "3,000+", label: "businesses onboarded" },
     ],
     sections: [
       {
@@ -362,7 +362,7 @@ export const aiProjects = [
 export const about = {
   intro: [
     "I am Sajmal, a Product Manager across payments, fintech, and D2C commerce. I spend my time in the least forgiving corner of product, where a bug is not a bad UX, it is someone's money.",
-    "As the founding PM for D2C checkout at Cashfree, I built the vertical from zero to $100M in annual TPV and 1,000+ merchants. Before that I owned the EMI, BNPL, and core payments charter, scaling checkout financing 3X. I started as a software engineer at JP Morgan, where I built an AI engine serving 4,000+ banking clients and cut email servicing time by 95%.",
+    "As the founding PM for D2C checkout at Cashfree, I built the vertical from zero to $100M in annual TPV and 3,000+ businesses. Before that I owned the EMI, BNPL, and core payments charter, scaling checkout financing 3X. I started as a software engineer at JP Morgan, where I built an AI engine serving 4,000+ banking clients and cut email servicing time by 95%.",
   ],
   throughline: [
     "The thread through all of it is the same: life is hard enough, so I find the thing quietly making it harder, sit with it long enough to truly understand it, and build something that makes people's lives easier and earns big for the business. I care about growth and monetisation as outcomes, not vanity metrics.",
