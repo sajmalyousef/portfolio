@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { profile, caseStudies, aiProjects, about } from "@/lib/content";
+import { profile, caseStudies, aiProjects, about, featured } from "@/lib/content";
 import { Hero } from "@/components/Hero";
 import { Reveal } from "@/components/Reveal";
 import { StatCounter } from "@/components/StatCounter";
@@ -69,6 +69,58 @@ export default function Home() {
               <WorkCard study={study} index={i} />
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      {/* Featured / press */}
+      <section className="border-y border-border bg-bg-elevated">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <Reveal>
+            <p className="label mb-3">Featured</p>
+            <h2 className="mb-10 font-display text-4xl font-bold text-text sm:text-5xl">
+              The work, out in the open.
+            </h2>
+          </Reveal>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {featured.posts.map((p) => (
+              <Reveal key={p.src}>
+                <div className="overflow-hidden rounded-2xl border border-border bg-bg-card">
+                  <iframe
+                    src={p.src}
+                    title={p.label}
+                    loading="lazy"
+                    allowFullScreen
+                    className="w-full"
+                    style={{ height: 399 }}
+                  />
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          <div className="mt-6 grid gap-6">
+            {featured.press.map((a) => (
+              <Reveal key={a.href}>
+                <a
+                  href={a.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-between gap-4 rounded-2xl border border-border bg-bg-card p-6 transition-colors hover:border-border-strong"
+                >
+                  <div>
+                    <p className="text-sm font-medium text-accent-dim">
+                      {a.source}
+                    </p>
+                    <p className="mt-1 font-display text-lg font-bold text-text">
+                      {a.title}
+                    </p>
+                  </div>
+                  <ArrowUpRight className="h-5 w-5 shrink-0 text-text-dim transition-all group-hover:text-accent" />
+                </a>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 

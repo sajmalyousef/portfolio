@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import type { CaseStudy } from "@/lib/content";
 import { Reveal } from "@/components/Reveal";
 import { StatCounter } from "@/components/StatCounter";
@@ -39,17 +39,6 @@ export function CaseStudyView({
             <Meta label="Timeframe" value={study.timeframe} />
             <Meta label="Focus" value={study.tags.join(" · ")} />
           </div>
-
-          {study.press && (
-            <a
-              href={study.press.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center gap-2 rounded-full border border-border-strong px-4 py-2 text-sm font-medium text-text transition-colors hover:border-accent hover:text-accent"
-            >
-              {study.press.label} <ArrowUpRight className="h-4 w-4" />
-            </a>
-          )}
         </div>
       </header>
 
@@ -88,27 +77,6 @@ export function CaseStudyView({
           </Reveal>
         ))}
       </div>
-
-      {/* LinkedIn embed */}
-      {study.embedUrl && (
-        <section className="border-t border-border">
-          <div className="mx-auto max-w-3xl px-6 py-16">
-            <Reveal>
-              <p className="label mb-6">On LinkedIn</p>
-              <div className="flex justify-center">
-                <iframe
-                  src={study.embedUrl}
-                  title="LinkedIn post"
-                  loading="lazy"
-                  allowFullScreen
-                  className="w-full max-w-[504px] rounded-2xl border border-border"
-                  style={{ height: 600 }}
-                />
-              </div>
-            </Reveal>
-          </div>
-        </section>
-      )}
 
       {/* Impact */}
       <section className="border-y border-border bg-bg-elevated">

@@ -57,8 +57,6 @@ export type CaseStudy = {
   sections: Section[];
   impact: Metric[];
   learned: string;
-  embedUrl?: string;
-  press?: { label: string; href: string };
 };
 
 export const caseStudies: CaseStudy[] = [
@@ -120,12 +118,6 @@ export const caseStudies: CaseStudy[] = [
     ],
     learned:
       "Conversion came from removing friction step by step and timing offers well. Getting merchants live with no friction mattered just as much as the checkout itself.",
-    embedUrl:
-      "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7404492798001020928?collapsed=1",
-    press: {
-      label: "Featured in YourStory",
-      href: "https://yourstory.com/2026/06/cashfree-payments-one-click-checkout-sepoy-co-crack-d2c-conversion-code",
-    },
   },
 
   // ── 2. RTO ────────────────────────────────────────────────
@@ -170,8 +162,6 @@ export const caseStudies: CaseStudy[] = [
     ],
     learned:
       "A risk product only works if merchants trust it enough to act on the score. Giving each merchant controls tuned to their own margins is what earned that trust.",
-    embedUrl:
-      "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7450766407153397761?collapsed=1",
   },
 
   // ── 3. EMI & BNPL ─────────────────────────────────────────
@@ -331,6 +321,27 @@ export const aiProjects = [
     href: "https://watch-this--sajmaly.replit.app/",
   },
 ];
+
+export const featured = {
+  posts: [
+    {
+      label: "One-Click Checkout & Offer Engine",
+      src: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7404492798001020928?compact=1",
+    },
+    {
+      label: "Return to Origin",
+      src: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7450766407153397761?compact=1",
+    },
+  ],
+  press: [
+    {
+      source: "YourStory",
+      title:
+        "How Cashfree's One-Click Checkout and Sepoy & Co cracked the D2C conversion code",
+      href: "https://yourstory.com/2026/06/cashfree-payments-one-click-checkout-sepoy-co-crack-d2c-conversion-code",
+    },
+  ],
+};
 
 export const about = {
   intro: [
