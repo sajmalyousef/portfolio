@@ -145,7 +145,7 @@ export const caseStudies: CaseStudy[] = [
     timeframe: "Cashfree Payments, 2025 to present",
     tags: ["Risk", "COD", "Logistics", "Revenue"],
     heroMetrics: [
-      { value: "25→4%", label: "RTO rate on managed orders" },
+      { value: "25% → 4%", label: "RTO rate on managed orders" },
       { value: "$2.5M", label: "annual revenue unlocked", sub: "Partial COD" },
       { value: "30%", label: "RTO reduction overall" },
     ],
@@ -183,7 +183,7 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     impact: [
-      { value: "25→4%", label: "RTO rate on managed orders" },
+      { value: "25% → 4%", label: "RTO rate on managed orders" },
       { value: "30%", label: "overall RTO reduction" },
       { value: "$2.5M", label: "annual revenue from Partial COD" },
       { value: "2.5B+", label: "logistics data points modelled" },

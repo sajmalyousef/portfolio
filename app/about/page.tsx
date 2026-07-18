@@ -22,7 +22,7 @@ export default function AboutPage() {
             width={400}
             height={400}
             priority
-            className="mb-8 h-28 w-28 rounded-2xl border border-border object-cover"
+            className="mb-8 h-36 w-36 rounded-2xl border border-border object-cover"
           />
           <p className="label mb-5">The story</p>
           <h1 className="font-display text-5xl font-bold text-text sm:text-6xl">

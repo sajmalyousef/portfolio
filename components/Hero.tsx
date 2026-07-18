@@ -35,7 +35,7 @@ export function Hero() {
             width={400}
             height={400}
             priority
-            className="h-14 w-14 rounded-full border border-border object-cover"
+            className="h-20 w-20 rounded-full border border-border object-cover"
           />
           <p className="label">
             {profile.name} · {profile.role}
