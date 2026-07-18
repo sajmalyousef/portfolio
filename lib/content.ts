@@ -357,6 +357,14 @@ export const aiProjects = [
     stack: ["AI / LLM", "Next.js", "Psychometrics", "PDF"],
     href: "https://careerfindapp.vercel.app/",
   },
+  {
+    name: "Watch This",
+    tagline: "AI that finds what to watch",
+    description:
+      "Picking a movie means digging through Reddit threads, Instagram reels, and a dozen review sites before you finally commit. Watch This does that hunt for you: it reads the social web for real opinions and tells you what is actually worth your night.",
+    stack: ["AI / LLM", "Recommendations", "Social signals"],
+    href: "https://watch-this--sajmaly.replit.app/",
+  },
 ];
 
 export const about = {
