@@ -76,9 +76,9 @@ export default function Home() {
       <section className="border-y border-border bg-bg-elevated">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <Reveal>
-            <p className="label mb-3">Writing</p>
+            <p className="label mb-3">Featured</p>
             <h2 className="mb-10 font-display text-4xl font-bold text-text sm:text-5xl">
-              What I write about.
+              Featured work.
             </h2>
           </Reveal>
 

@@ -167,15 +167,15 @@ export const caseStudies: CaseStudy[] = [
 
   // ── 3. EMI & BNPL ─────────────────────────────────────────
   {
-    slug: "emi-bnpl",
+    slug: "checkout-financing",
     order: 3,
-    title: "Scaling checkout financing 1 to 10",
-    kicker: "Consumer EMI & BNPL",
+    title: "Scaling checkout financing",
+    kicker: "EMI, BNPL & B2B Credit",
     oneLiner:
-      "I owned the EMI and BNPL charter across 15+ banks and lenders. Card EMI GMV grew 3X, payment success rose 45%, and I embedded credit at checkout with a whitelabel Pay-in-3.",
+      "I owned the consumer credit charter across 15+ banks and lenders, growing card EMI GMV 3X and payment success 45%, then took embedded credit into B2B marketplaces.",
     role: "Product Manager, Core Payments",
     timeframe: "Cashfree Payments, 2022 to 2025",
-    tags: ["Credit", "BNPL", "EMI", "Growth"],
+    tags: ["Credit", "EMI", "BNPL", "B2B"],
     heroMetrics: [
       { value: "3X", label: "card EMI GMV growth" },
       { value: "+45%", label: "payment success rate" },
@@ -191,11 +191,19 @@ export const caseStudies: CaseStudy[] = [
         ],
       },
       {
-        label: "What I built",
+        label: "Consumer credit",
         heading: "Automated onboarding, dynamic routing, embedded credit",
         body: [
           "I automated lender onboarding and built dynamic routing that sends each transaction down the path most likely to succeed. Card EMI GMV grew 3X and success rose 45%.",
           "I built a whitelabel Pay-in-3 that embeds credit at checkout, which lifted conversion 12%, and launched BNPL rails with top lenders, expanding the merchant base 30%. I also led 3DS 2.0 and tokenization across Visa, Mastercard, and RuPay to keep the stack RBI-compliant.",
+        ],
+      },
+      {
+        label: "B2B credit",
+        heading: "Extending credit to B2B marketplaces",
+        body: [
+          "A business buying inventory on a marketplace pays the supplier now and sells over the next 30 to 60 days. Bank credit for that gap is slow and often declined, because small businesses are thin-file.",
+          "I piloted embedded credit for large marketplaces, partnering with lenders rather than holding the risk ourselves. Buyers draw working capital at purchase, underwritten on the transaction and settlement data already on the platform, so credit works like a payment method, not a separate loan application.",
         ],
       },
     ],
@@ -206,56 +214,13 @@ export const caseStudies: CaseStudy[] = [
       { value: "+30%", label: "merchants via BNPL rails" },
     ],
     learned:
-      "Framing and plumbing matter equally. A loan is a no as a lump sum and a yes as a monthly payment, but only if onboarding, routing, and settlements hold up underneath.",
+      "Framing and plumbing matter equally, in consumer and B2B credit alike. A loan is a no as a lump sum and a yes as a monthly line, but only if onboarding, routing, settlements, and underwriting hold up underneath.",
   },
 
-  // ── 4. B2B BNPL & Credit ──────────────────────────────────
-  {
-    slug: "b2b-credit",
-    order: 4,
-    title: "Embedding credit for B2B marketplaces",
-    kicker: "B2B BNPL & Credit",
-    oneLiner:
-      "I piloted B2B embedded credit for large marketplaces, partnering with lenders to extend working capital at the point of purchase.",
-    role: "Product Manager, Core Payments",
-    timeframe: "Cashfree Payments, 2022 to 2025",
-    tags: ["B2B", "Embedded credit", "Working capital", "0 to 1"],
-    heroMetrics: [
-      { value: "0 to 1", label: "new B2B credit charter" },
-      { value: "15+", label: "lending partners integrated" },
-      { value: "Embedded", label: "credit at the point of purchase" },
-    ],
-    sections: [
-      {
-        label: "The problem",
-        heading: "A cash-flow gap banks are slow to fund",
-        body: [
-          "A business buying inventory on a marketplace pays the supplier now and sells over the next 30 to 60 days. Bank credit for that gap is slow and often declined, because small businesses are thin-file.",
-          "Coming off the consumer credit charter, I took embedded credit into B2B: bigger tickets, thinner data, and real balance-sheet risk.",
-        ],
-      },
-      {
-        label: "What I built",
-        heading: "Credit at the point of purchase",
-        body: [
-          "I piloted embedded credit for large marketplaces, partnering with lenders rather than holding the risk ourselves. Buyers draw working capital at purchase, sized to their cash cycle.",
-          "Underwriting runs on the transaction and settlement data already on the platform, so credit works like a payment method, not a separate loan application.",
-        ],
-      },
-    ],
-    impact: [
-      { value: "0 to 1", label: "B2B embedded credit, launched as a pilot" },
-      { value: "15+", label: "lending partners integrated" },
-      { value: "Data-native", label: "underwriting on existing payment flows" },
-    ],
-    learned:
-      "In B2B credit the product and the risk model are the same thing. You cannot ship a good flow on top of a policy that loses money.",
-  },
-
-  // ── 5. SimplQ ─────────────────────────────────────────────
+  // ── 4. SimplQ ─────────────────────────────────────────────
   {
     slug: "simplq",
-    order: 5,
+    order: 4,
     title: "SimplQ, an open-source queue manager",
     kicker: "Open-source project",
     oneLiner:
