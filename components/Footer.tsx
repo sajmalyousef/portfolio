@@ -7,16 +7,9 @@ export function Footer() {
     <footer className="relative z-[2] border-t border-border bg-bg-elevated">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
-          <div>
-            <p className="label mb-3">Let&rsquo;s build something</p>
-            <h2 className="font-display text-4xl font-bold text-text sm:text-5xl">
-              Want the full story?
-            </h2>
-            <p className="mt-3 max-w-md text-text-muted">
-              I&rsquo;m always up for the next hard problem. Lately I am playing
-              with AI and want to make it big. Let&rsquo;s talk.
-            </p>
-          </div>
+          <h2 className="font-display text-4xl font-bold text-text sm:text-5xl">
+            Get in touch.
+          </h2>
           <a
             href={profile.links.email.startsWith("http") ? profile.links.email : `mailto:${profile.links.email}`}
             className="inline-flex w-fit items-center gap-2 rounded-full bg-accent px-6 py-3 font-semibold text-bg transition-transform hover:scale-[1.03]"

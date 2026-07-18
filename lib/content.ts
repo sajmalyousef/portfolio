@@ -258,14 +258,14 @@ export const caseStudies: CaseStudy[] = [
     title: "Embedding credit for B2B marketplaces",
     kicker: "B2B BNPL & Credit",
     oneLiner:
-      "I piloted B2B embedded credit for marketplaces like Reliance and Flipkart, partnering with lending providers to extend working capital at the point of purchase.",
+      "I piloted B2B embedded credit for large marketplaces, partnering with lending providers to extend working capital at the point of purchase.",
     role: "Product Manager, Core Payments",
     timeframe: "Cashfree Payments, 2022 to 2025",
     tags: ["B2B", "Embedded credit", "Working capital", "0 to 1"],
     heroMetrics: [
       { value: "0 to 1", label: "new B2B credit charter" },
-      { value: "Reliance, Flipkart", label: "marquee marketplace pilots" },
-      { value: "15+", label: "lending partners across the credit charter" },
+      { value: "15+", label: "lending partners integrated" },
+      { value: "Embedded", label: "credit at the point of purchase" },
     ],
     sections: [
       {
@@ -281,14 +281,14 @@ export const caseStudies: CaseStudy[] = [
         label: "The build",
         heading: "Credit at the point of purchase",
         body: [
-          "I piloted B2B embedded credit for marketplaces like Reliance and Flipkart, partnering with lending providers rather than taking the balance-sheet risk ourselves. The buyer draws working capital at the moment of purchase, sized to their real cash-conversion cycle, and the marketplace closes more and larger orders.",
+          "I piloted B2B embedded credit for large marketplaces, partnering with lending providers rather than taking the balance-sheet risk ourselves. The buyer draws working capital at the moment of purchase, sized to their real cash-conversion cycle, and the marketplace closes more and larger orders.",
           "The product work was in the seams: underwriting against the transaction and settlement data that already flows through the platform, and designing the integration so credit felt like a native payment method rather than a separate loan application.",
         ],
       },
     ],
     impact: [
       { value: "0 to 1", label: "B2B embedded credit, launched as a pilot" },
-      { value: "Reliance, Flipkart", label: "marquee marketplace partners" },
+      { value: "15+", label: "lending partners integrated" },
       { value: "Data-native", label: "underwriting on existing payment flows" },
     ],
     learned:
