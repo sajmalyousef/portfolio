@@ -57,8 +57,8 @@ export default function Home() {
               </h2>
             </div>
             <p className="max-w-sm text-text-muted">
-              A summary of what I have shipped across payments, checkout, and
-              credit at Cashfree, plus an open-source project of my own.
+              Payments, checkout, and credit at Cashfree, plus an open-source
+              project of my own.
             </p>
           </div>
         </Reveal>

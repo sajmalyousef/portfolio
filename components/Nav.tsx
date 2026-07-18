@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { profile } from "@/lib/content";
+import { Logo } from "@/components/Logo";
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,10 +26,13 @@ export function Nav() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link
           href="/"
-          className="font-display text-lg font-bold tracking-tight text-text"
+          className="flex items-center gap-2.5 font-display text-lg font-bold tracking-tight text-text"
         >
-          {profile.name.split(" ")[0]}
-          <span className="text-accent">.</span>
+          <Logo className="h-7 w-7" />
+          <span>
+            {profile.name.split(" ")[0]}
+            <span className="text-accent">.</span>
+          </span>
         </Link>
 
         <div className="flex items-center gap-6 text-sm">
