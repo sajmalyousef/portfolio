@@ -376,7 +376,7 @@ export const about = {
     "I built things with friends, chased real adoption, and found deep satisfaction in it. IIM Bangalore sharpened me and surrounded me with big dreamers. Today I build payments and checkout for small businesses, always close to the people using it, trying to make their lives easier and the business bigger.",
   ],
   throughline: [
-    "Right now I am playing with AI, and I want to make it big with it. I have built with AI since JP Morgan, where I shipped an engine for 4,000+ banking clients, then an AI insights mailer for 1,000+ merchants, and I am now building CareerFind, CROScore, and Watch This on the side. Same shape of problem, bigger canvas.",
+    "I have built with AI since JP Morgan, where I shipped an engine for 4,000+ banking clients, then an AI insights mailer for 1,000+ merchants, and I am now building CareerFind, CROScore, and Watch This on the side. Same shape of problem, bigger canvas.",
   ],
   values: [
     { title: "Ship the proof, not just the product", text: "A number a merchant can see beats a promise a merchant has to believe." },
