@@ -9,7 +9,7 @@ export const profile = {
   location: "Bengaluru, India",
   headlineTop: "I build and scale",
   headlineAccent: "checkout for SMBs",
-  headlineBottom: "from 0 to 1, and 1 to 10.",
+  headlineBottom: "from 0 to 1 and beyond.",
   thesis:
     "Product Manager across payments, fintech, and D2C commerce.",
   subthesis:

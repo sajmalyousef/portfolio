@@ -1,6 +1,6 @@
 # Sajmal Yousef — Portfolio
 
-Personal portfolio site. Product Manager building and scaling checkout for SMBs, from 0 to 1 and 1 to 10.
+Personal portfolio site. Product Manager building and scaling checkout for SMBs, from 0 to 1 and beyond.
 
 Built with **Next.js 16**, **TypeScript**, **Tailwind CSS v4**, and **motion**.
 
