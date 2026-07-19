@@ -3,6 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import { profile, caseStudies, aiProjects, about, featured } from "@/lib/content";
 import { Hero } from "@/components/Hero";
 import { Reveal } from "@/components/Reveal";
+import { Unveil } from "@/components/Unveil";
 import { StatCounter } from "@/components/StatCounter";
 import { WorkCard } from "@/components/WorkCard";
 
@@ -53,7 +54,7 @@ export default function Home() {
             <div>
               <p className="label mb-3">Selected work</p>
               <h2 className="font-display text-4xl font-bold text-text sm:text-5xl">
-                The work.
+                <Unveil>The work.</Unveil>
               </h2>
             </div>
             <p className="max-w-sm text-text-muted">
@@ -78,7 +79,7 @@ export default function Home() {
           <Reveal>
             <p className="label mb-3">Featured</p>
             <h2 className="mb-10 font-display text-4xl font-bold text-text sm:text-5xl">
-              Featured work.
+              <Unveil>Featured work.</Unveil>
             </h2>
           </Reveal>
 
@@ -152,7 +153,7 @@ export default function Home() {
             <div>
               <p className="label mb-3">On the side</p>
               <h2 className="font-display text-4xl font-bold text-text sm:text-5xl">
-                Playing with AI.
+                <Unveil>Playing with AI.</Unveil>
               </h2>
             </div>
           </div>

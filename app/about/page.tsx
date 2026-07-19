@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { profile, about, caseStudies } from "@/lib/content";
 import { Reveal } from "@/components/Reveal";
+import { Unveil } from "@/components/Unveil";
 
 export const metadata: Metadata = {
   title: `About · ${profile.name}`,
@@ -26,8 +27,10 @@ export default function AboutPage() {
           />
           <p className="label mb-5">The story</p>
           <h1 className="font-display text-5xl font-bold text-text sm:text-6xl">
-            At the intersection of{" "}
-            <span className="text-accent">fintech and e-commerce</span>.
+            <Unveil>
+              At the intersection of{" "}
+              <span className="text-accent">fintech and e-commerce</span>.
+            </Unveil>
           </h1>
         </div>
       </header>

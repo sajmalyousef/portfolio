@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import type { CaseStudy } from "@/lib/content";
 import { Reveal } from "@/components/Reveal";
+import { Unveil } from "@/components/Unveil";
 import { StatCounter } from "@/components/StatCounter";
 
 export function CaseStudyView({
@@ -28,7 +29,7 @@ export function CaseStudyView({
 
           <p className="label mb-5">{study.kicker}</p>
           <h1 className="font-display text-4xl font-bold text-text sm:text-6xl">
-            {study.title}
+            <Unveil>{study.title}</Unveil>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-text-muted">
             {study.oneLiner}
@@ -64,7 +65,7 @@ export function CaseStudyView({
             <section className={i > 0 ? "mt-20" : ""}>
               <p className="label mb-4">{s.label}</p>
               <h2 className="font-display text-3xl font-bold text-text sm:text-4xl">
-                {s.heading}
+                <Unveil>{s.heading}</Unveil>
               </h2>
               <div className="mt-6 space-y-5">
                 {s.body.map((p, j) => (
@@ -84,7 +85,7 @@ export function CaseStudyView({
           <Reveal>
             <p className="label mb-3">The impact</p>
             <h2 className="font-display text-3xl font-bold text-text sm:text-4xl">
-              What it moved
+              <Unveil>What it moved</Unveil>
             </h2>
           </Reveal>
           <div className="mt-12 grid grid-cols-2 gap-x-8 gap-y-12 lg:grid-cols-4">
