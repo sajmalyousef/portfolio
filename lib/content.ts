@@ -331,10 +331,9 @@ export const featured = {
 
 export const about = {
   intro: [
-    "I grew up without knowing what an IIT or an IIM was, or how big a life could get. I was taught to do my best, be kind, and stay humble, and for a long time that was the whole plan.",
-    "People I met along the way believed in me and helped me reach NIT Calicut, which taught me to dream. I picked Computer Science because it looked like a safe, well-paying job, and my first role at JP Morgan checked off the small ambitions I grew up with.",
-    "What actually pulled me in was quieter: watching someone use a thing I built and having their day get simpler. In 2020 I learned that feeling has a name, product management, and I have chased it ever since. IIM Bangalore sharpened me and put me around people who dream big.",
-    "Today I work at the intersection of fintech and commerce, building payments, checkout, and credit for small businesses. It is the least forgiving corner of product, where a bug is not a bad experience, it is someone's money. That is exactly why I like it.",
+    "I am a product manager working at the intersection of fintech and e-commerce. I studied Computer Science at NIT Calicut and started out as an engineer at JP Morgan.",
+    "Product pulled me in for a simple reason: I liked watching people use something I built and having it make their day easier. I found out that has a name in 2020, did an MBA at IIM Bangalore, and have built products ever since.",
+    "Today I build payments, checkout, and credit for small businesses. It is careful work, real money is moving, and I like that it forces you to get the details right.",
   ],
   throughline: [
     "I have built with AI since JP Morgan, where I shipped an engine for 4,000+ banking clients, and later an AI insights mailer for 1,000+ merchants. Lately I build with it on the side: CareerFind, CROScore, and Watch This.",

@@ -27,7 +27,7 @@ export default function AboutPage() {
           <p className="label mb-5">The story</p>
           <h1 className="font-display text-5xl font-bold text-text sm:text-6xl">
             At the intersection of{" "}
-            <span className="text-accent">fintech and commerce</span>.
+            <span className="text-accent">fintech and e-commerce</span>.
           </h1>
         </div>
       </header>
