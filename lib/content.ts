@@ -6,7 +6,7 @@
 
 export const profile = {
   name: "Sajmal Yousef",
-  role: "Product Manager, Cashfree Payments",
+  role: "Product Manager",
   location: "Bengaluru, India",
   headshot: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/headshot.jpg`,
   headlineLead: "I build and scale",
