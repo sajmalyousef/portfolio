@@ -4,6 +4,10 @@
 // Plain, factual voice. No named clients.
 // ─────────────────────────────────────────────────────────────
 
+// Google Analytics 4 Measurement ID (e.g. "G-XXXXXXXXXX").
+// Leave empty to disable analytics. Public value, safe to commit.
+export const GA_MEASUREMENT_ID = "";
+
 export const profile = {
   name: "Sajmal Yousef",
   role: "Product Manager",
