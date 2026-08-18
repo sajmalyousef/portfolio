@@ -343,9 +343,9 @@ export const about = {
     "I have built with AI since JP Morgan, where I shipped an engine for 4,000+ banking clients, and later an AI insights mailer for 1,000+ merchants. Lately I build with it on the side: CareerFind, CROScore, and Watch This.",
   ],
   values: [
-    { title: "Ship the proof, not just the product", text: "A number a merchant can see beats a promise a merchant has to believe." },
-    { title: "Reframe before you build", text: "Partial COD hurt conversion until I reframed RTO as risk segmentation. The better move is often a better question." },
-    { title: "Own the whole stack", text: "Growth is worthless if settlements, routing, and compliance do not hold up underneath it." },
+    { title: "Stay close to the user", text: "The best calls come from watching real people use what I built." },
+    { title: "Ask the better question", text: "A reframe usually beats more building." },
+    { title: "Show the number", text: "Proof someone can see beats a promise they have to trust." },
   ],
   credentials: [
     { label: "MBA, IIM Bangalore", detail: "Post Graduate Programme, 2020 to 2022" },
