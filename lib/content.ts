@@ -343,9 +343,9 @@ export const about = {
     "I have built with AI since JP Morgan, where I shipped an engine for 4,000+ banking clients, and later an AI insights mailer for 1,000+ merchants. Lately I build with it on the side: CareerFind, CROScore, and Watch This.",
   ],
   values: [
+    { title: "Give the user value first", text: "Solve something real for the person using it, and the business follows." },
+    { title: "Be obsessed with getting it right", text: "Sweat the details until it feels right, not just shipped." },
     { title: "Stay close to the user", text: "The best calls come from watching real people use what I built." },
-    { title: "Ask the better question", text: "A reframe usually beats more building." },
-    { title: "Show the number", text: "Proof someone can see beats a promise they have to trust." },
   ],
   credentials: [
     { label: "MBA, IIM Bangalore", detail: "Post Graduate Programme, 2020 to 2022" },
