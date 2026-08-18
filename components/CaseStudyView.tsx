@@ -17,18 +17,17 @@ export function CaseStudyView({
   return (
     <article className="relative">
       {/* Hero */}
-      <header className="relative overflow-hidden border-b border-border">
-        <div className="glow left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2" />
+      <header className="relative border-b border-border">
         <div className="relative mx-auto max-w-4xl px-6 pb-16 pt-36">
           <Link
             href="/#work"
-            className="mb-10 inline-flex items-center gap-2 text-sm text-text-muted transition-colors hover:text-accent"
+            className="mono mb-10 inline-flex items-center gap-2 text-[13px] text-text-muted transition-colors hover:text-accent"
           >
-            <ArrowLeft className="h-4 w-4" /> All work
+            <ArrowLeft className="h-4 w-4" /> all work
           </Link>
 
           <p className="label mb-5">{study.kicker}</p>
-          <h1 className="font-display text-4xl font-bold text-text sm:text-6xl">
+          <h1 className="font-display text-4xl font-semibold text-text sm:text-6xl">
             <Unveil>{study.title}</Unveil>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-text-muted">
@@ -48,11 +47,11 @@ export function CaseStudyView({
         <div className="mx-auto grid max-w-4xl grid-cols-1 divide-y divide-border px-6 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
           {study.heroMetrics.map((m) => (
             <div key={m.label} className="py-8 sm:px-6 sm:first:pl-0">
-              <div className="font-display text-4xl font-bold text-accent sm:text-5xl">
+              <div className="mono text-4xl font-medium text-accent sm:text-5xl">
                 <StatCounter value={m.value} />
               </div>
-              <p className="mt-2 text-sm text-text-muted">{m.label}</p>
-              {m.sub && <p className="text-xs text-text-dim">{m.sub}</p>}
+              <p className="mono mt-2 text-[13px] text-text-muted">{m.label}</p>
+              {m.sub && <p className="mono text-[11px] text-text-dim">{m.sub}</p>}
             </div>
           ))}
         </div>
@@ -91,10 +90,10 @@ export function CaseStudyView({
           <div className="mt-12 grid grid-cols-2 gap-x-8 gap-y-12 lg:grid-cols-4">
             {study.impact.map((m, i) => (
               <Reveal key={m.label} delay={i * 0.08}>
-                <div className="font-display text-4xl font-bold text-accent sm:text-5xl">
+                <div className="mono text-4xl font-medium text-accent sm:text-5xl">
                   <StatCounter value={m.value} />
                 </div>
-                <p className="mt-2 text-sm leading-snug text-text-muted">
+                <p className="mono mt-2 text-[13px] leading-snug text-text-muted">
                   {m.label}
                 </p>
               </Reveal>
@@ -127,8 +126,8 @@ export function CaseStudyView({
 function Meta({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <p className="text-xs uppercase tracking-wider text-text-dim">{label}</p>
-      <p className="mt-1 text-text">{value}</p>
+      <p className="mono text-[11px] uppercase tracking-wider text-text-dim">{label}</p>
+      <p className="mt-1 text-sm text-text">{value}</p>
     </div>
   );
 }
@@ -144,12 +143,12 @@ function NavLink({ study, dir }: { study?: CaseStudy; dir: "prev" | "next" }) {
         isNext ? "sm:items-end sm:text-right" : ""
       }`}
     >
-      <span className="flex items-center gap-2 text-xs uppercase tracking-wider text-text-dim">
+      <span className="mono flex items-center gap-2 text-[11px] uppercase tracking-wider text-text-dim">
         {!isNext && <ArrowLeft className="h-3.5 w-3.5" />}
         {isNext ? "Next" : "Previous"}
         {isNext && <ArrowRight className="h-3.5 w-3.5" />}
       </span>
-      <span className="font-display text-xl font-bold text-text transition-colors group-hover:text-accent">
+      <span className="font-display text-xl font-semibold text-text transition-colors group-hover:text-accent">
         {study.title}
       </span>
     </Link>

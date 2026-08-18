@@ -25,18 +25,17 @@ export function Nav() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link
           href="/"
-          className="font-display text-lg font-bold tracking-tight text-text"
+          className="mono text-[15px] font-medium tracking-tight text-text"
         >
-          {profile.name.split(" ")[0]}
-          <span className="text-accent">.</span>
+          sajmal<span className="text-accent">_</span>yousef
         </Link>
 
-        <div className="flex items-center gap-6 text-sm">
-          <Link href="/#work" className="link-sweep hidden text-text-muted transition-colors hover:text-text sm:inline">
-            Work
+        <div className="mono flex items-center gap-6 text-[13px]">
+          <Link href="/#work" className="hidden text-text-muted transition-colors hover:text-accent sm:inline">
+            /work
           </Link>
-          <Link href="/about" className="link-sweep hidden text-text-muted transition-colors hover:text-text sm:inline">
-            About
+          <Link href="/about" className="hidden text-text-muted transition-colors hover:text-accent sm:inline">
+            /about
           </Link>
           <a
             href={profile.links.linkedin}
@@ -56,7 +55,7 @@ export function Nav() {
           </a>
           <a
             href={profile.links.email.startsWith("http") ? profile.links.email : `mailto:${profile.links.email}`}
-            className="rounded-full border border-border-strong px-4 py-1.5 font-medium text-text transition-colors hover:border-accent hover:text-accent"
+            className="rounded-md border border-border-strong px-3.5 py-1.5 text-text transition-colors hover:border-accent hover:text-accent"
           >
             Get in touch
           </a>

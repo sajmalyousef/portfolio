@@ -14,8 +14,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="relative">
-      <header className="relative overflow-hidden border-b border-border">
-        <div className="glow left-1/2 top-0 h-[500px] w-[700px] -translate-x-1/2" />
+      <header className="relative border-b border-border">
         <div className="relative mx-auto max-w-3xl px-6 pb-16 pt-40">
           <Image
             src={profile.headshot}
@@ -23,10 +22,10 @@ export default function AboutPage() {
             width={400}
             height={400}
             priority
-            className="mb-8 h-36 w-36 rounded-2xl border border-border object-cover"
+            className="mb-8 h-32 w-32 rounded-md border border-border object-cover"
           />
           <p className="label mb-5">The story</p>
-          <h1 className="font-display text-5xl font-bold text-text sm:text-6xl">
+          <h1 className="font-display text-5xl font-semibold text-text sm:text-6xl">
             <Unveil>
               At the intersection of{" "}
               <span className="text-accent">fintech and e-commerce</span>.
@@ -60,10 +59,10 @@ export default function AboutPage() {
         <Reveal>
           <div className="mt-20">
             <p className="label mb-8">What I believe</p>
-            <div className="space-y-px overflow-hidden rounded-2xl border border-border">
+            <div className="space-y-px overflow-hidden rounded-lg border border-border">
               {about.values.map((v) => (
                 <div key={v.title} className="bg-bg-card p-7">
-                  <h3 className="font-display text-xl font-bold text-text">
+                  <h3 className="font-display text-xl font-semibold text-text">
                     {v.title}
                   </h3>
                   <p className="mt-2 text-text-muted">{v.text}</p>
@@ -77,14 +76,14 @@ export default function AboutPage() {
         <Reveal>
           <div className="mt-20">
             <p className="label mb-8">Education and accolades</p>
-            <ul className="divide-y divide-border overflow-hidden rounded-2xl border border-border">
+            <ul className="divide-y divide-border overflow-hidden rounded-lg border border-border">
               {about.credentials.map((c) => (
                 <li
                   key={c.label}
                   className="flex flex-col gap-1 bg-bg-card p-6 sm:flex-row sm:items-center sm:justify-between"
                 >
                   <span className="font-medium text-text">{c.label}</span>
-                  <span className="text-sm text-text-dim">{c.detail}</span>
+                  <span className="mono text-[13px] text-text-dim">{c.detail}</span>
                 </li>
               ))}
             </ul>
@@ -105,7 +104,7 @@ export default function AboutPage() {
               <a
                 key={l.label}
                 href={l.href}
-                className="inline-flex items-center gap-2 rounded-full border border-border-strong px-5 py-2.5 font-medium text-text transition-colors hover:border-accent hover:text-accent"
+                className="inline-flex items-center gap-2 rounded-md border border-border-strong px-5 py-2.5 font-medium text-text transition-colors hover:border-accent hover:text-accent"
               >
                 {l.label} <ArrowUpRight className="h-4 w-4" />
               </a>

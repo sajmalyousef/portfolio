@@ -19,10 +19,10 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl grid-cols-1 divide-y divide-border px-6 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
           {profile.heroStats.map((s) => (
             <div key={s.label} className="py-10 sm:px-8 sm:first:pl-0">
-              <div className="font-display text-4xl font-bold text-accent sm:text-5xl">
+              <div className="mono text-4xl font-medium text-accent sm:text-5xl">
                 <StatCounter value={s.value} />
               </div>
-              <p className="mt-2 text-sm text-text-muted">{s.label}</p>
+              <p className="mono mt-2 text-[13px] text-text-muted">{s.label}</p>
             </div>
           ))}
         </div>
@@ -31,15 +31,10 @@ export default function Home() {
       {/* Credibility strip */}
       <section className="border-b border-border">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 sm:flex-row sm:items-center sm:gap-10">
-          <span className="text-xs uppercase tracking-[0.2em] text-text-dim">
-            Built and studied at
-          </span>
+          <span className="label text-text-dim">Built and studied at</span>
           <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
             {profile.companies.map((c) => (
-              <span
-                key={c}
-                className="font-display text-base font-medium text-text-muted"
-              >
+              <span key={c} className="text-base font-medium text-text-muted">
                 {c}
               </span>
             ))}
@@ -91,7 +86,7 @@ export default function Home() {
                   <p className="mb-4 text-lg leading-snug text-text md:min-h-[3.25rem]">
                     {p.line}
                   </p>
-                  <div className="mt-auto overflow-hidden rounded-2xl border border-border bg-bg-card">
+                  <div className="mt-auto overflow-hidden rounded-lg border border-border bg-bg-card">
                     <iframe
                       src={p.src}
                       title={p.tag}
@@ -113,13 +108,11 @@ export default function Home() {
                   href={a.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-between gap-4 rounded-2xl border border-border bg-bg-card p-6 transition-colors hover:border-border-strong"
+                  className="group flex items-center justify-between gap-4 rounded-lg border border-border bg-bg-card p-6 transition-colors hover:border-accent"
                 >
                   <div>
-                    <p className="text-sm font-medium text-accent-dim">
-                      {a.source}
-                    </p>
-                    <p className="mt-1 font-display text-lg font-bold text-text">
+                    <p className="mono text-xs text-accent-dim">{a.source}</p>
+                    <p className="mt-1.5 font-display text-lg font-semibold text-text">
                       {a.title}
                     </p>
                   </div>
@@ -166,15 +159,15 @@ export default function Home() {
                 href={p.href}
                 target={p.href.startsWith("http") ? "_blank" : undefined}
                 rel={p.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="group flex h-full flex-col rounded-2xl border border-border bg-bg-card p-7 transition-colors hover:border-border-strong"
+                className="group flex h-full flex-col rounded-lg border border-border bg-bg-card p-7 transition-colors hover:border-accent"
               >
                 <div className="mb-5 flex items-start justify-between">
-                  <h3 className="font-display text-2xl font-bold text-text">
+                  <h3 className="font-display text-2xl font-semibold text-text">
                     {p.name}
                   </h3>
                   <ArrowUpRight className="h-5 w-5 text-text-dim transition-all group-hover:text-accent group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </div>
-                <p className="text-sm font-medium text-accent-dim">{p.tagline}</p>
+                <p className="mono text-xs text-accent-dim">{p.tagline}</p>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-text-muted">
                   {p.description}
                 </p>
@@ -182,7 +175,7 @@ export default function Home() {
                   {p.stack.map((t) => (
                     <span
                       key={t}
-                      className="rounded-full border border-border px-3 py-1 text-xs text-text-dim"
+                      className="mono rounded-md border border-border px-2.5 py-1 text-[11px] text-text-dim"
                     >
                       {t}
                     </span>

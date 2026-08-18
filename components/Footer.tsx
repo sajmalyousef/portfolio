@@ -7,12 +7,12 @@ export function Footer() {
     <footer className="relative z-[2] border-t border-border bg-bg-elevated">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
-          <h2 className="font-display text-4xl font-bold text-text sm:text-5xl">
+          <h2 className="font-display text-4xl font-semibold text-text sm:text-5xl">
             Get in touch.
           </h2>
           <a
             href={profile.links.email.startsWith("http") ? profile.links.email : `mailto:${profile.links.email}`}
-            className="inline-flex w-fit items-center gap-2 rounded-full bg-accent px-6 py-3 font-semibold text-bg transition-transform hover:scale-[1.03]"
+            className="mono inline-flex w-fit items-center gap-2 rounded-md bg-accent px-5 py-3 text-[15px] text-white transition-colors hover:bg-accent-dim"
           >
             {profile.links.email}
           </a>
