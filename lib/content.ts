@@ -344,7 +344,7 @@ export const about = {
   ],
   values: [
     { title: "Give the user value first", text: "Solve something real for the person using it, and the business follows." },
-    { title: "Be obsessed with getting it right", text: "Sweat the details until it feels right, not just shipped." },
+    { title: "Move fast, stay obsessed", text: "Ship quickly, and still sweat the details until it feels right." },
     { title: "Stay close to the user", text: "The best calls come from watching real people use what I built." },
   ],
   credentials: [
